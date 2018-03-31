@@ -23,7 +23,7 @@
 define('DB_NAME', 'myDb');
 
 /** Имя пользователя MySQL */
-define('DB_USER', 'user');
+define('DB_USER', 'root');
 
 /** Пароль к базе данных MySQL */
 define('DB_PASSWORD', 'test');
@@ -46,14 +46,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'paQR$*~,nK1,7aYy~<7e4ed|_+s<m7e:5p.AMxRpzB/G4-zB@#oXnm%n#:/]<G45');
-define('SECURE_AUTH_KEY',  '(<690cp*aC=0)dnKpskr%BOX5n0#4El[PD2+RtG_mU]sJ)kC&.c [)Q(W[qS%W2-');
-define('LOGGED_IN_KEY',    'UH5):XEc+BqQGAq>k]m504qzY-[H8eb$o]vp+{_Pet%,lB9E?T91YT|Tbke>H63t');
-define('NONCE_KEY',        '$O)AKfZOv^*4s9{~<Q>I]fW.{Dg!TQ.<Dwgmvtt8e*d}6=>6G2si7KjU{($#!g z');
-define('AUTH_SALT',        'H(k$-BK0sOqKc~K YKr&1!11kRp3^14CJr]zgkJZO^9]Dq6_PgL+?><_G{Ao6=TN');
-define('SECURE_AUTH_SALT', 'q~!3xQ7Bc61`7X*s`BJ<_4#+b9fy+P0Qw$Wt_a_ N.X1Hy.6m>wLW_Xr%_9Ij|gM');
-define('LOGGED_IN_SALT',   '|@nuqUL@n9%@{Pl+}ygcz!T;}2-El2;*l*WQ;fGm:O1GXpAl#`/?s[vzipYMxtI]');
-define('NONCE_SALT',       ']1!&V9M5$5@w;i)l_Xf|b7=%^RODH;UlHvzQ5|I:i</cB8BOCgd:@> 228n/WfCu');
+define('AUTH_KEY',         '>3OCk/]K<nOjk6S#_p[ZPRhgklXHaEB&ivYG:yOgS`.jQ7)Nwx9_odnyq}PL8jyI');
+define('SECURE_AUTH_KEY',  '}xJAXZgYE{8%7F@r;/aAwz^x $5C>f4>!j?ik.V=Me3[2DOPymd1q,F-[4/XU3w4');
+define('LOGGED_IN_KEY',    ':Rog/#P-*G+B8@_gQuipG6LITqQC}GWiz?MvK9YJM[vAk4OMOnrp2Z;A{KKLAi60');
+define('NONCE_KEY',        'i|j#4l8+7)%K_ESQQzxFOCC->.l13s$e<f8@vrx^Sj#{{X&-[5zmX,1_0qz0j^E3');
+define('AUTH_SALT',        '_GN^0~fWm94Y^4pR//8B )JHqJsJa5SJwal=Az+N,LNd)@aW?;7~3(ZS@o?<-~B(');
+define('SECURE_AUTH_SALT', 'E]t0G`^y~+#AXc[DVjfkrQ&{*]cHPY(KIGW#O.13P0@3A#OTXYk%[;Vp|n{B&_ic');
+define('LOGGED_IN_SALT',   'T>ZqXG9jY|(U;Lx6>Ub,}~H%PeU:1Gt3AkpCC58p)xBo1oaY0U}(EY)nfC6@T:89');
+define('NONCE_SALT',       'u}GR-Q0o5?*1!]8%7Jh8@#gSJ<G~8T9!rbXZgPM|6jlA<Z,dYjo))Vlhd~g/:b6P');
 
 /**#@-*/
 
@@ -76,7 +76,7 @@ $table_prefix  = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
 /* Это всё, дальше не редактируем. Успехов! */
 
