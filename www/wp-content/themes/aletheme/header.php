@@ -10,12 +10,25 @@
 </head>
 <body <?php body_class('Ilya'); ?> >
 
-<?php /*if(ale_get_option('sitelogo')){
+<?php if(ale_get_option('sitelogo')){
     echo "<img src='".ale_get_option('sitelogo')."' />";
-}*/ ?>
-<?php ale_option('sitelogo'); ?>
+} ?>
 
 <?php echo ale_get_option('calltoaction'); ?>
+
+<?php if( has_nav_menu('header_left_menu') ){
+    echo '<br>Левое меню';
+   wp_nav_menu(['theme_location' => 'header_left_menu']);
+}?>
+
+<?php if( has_nav_menu('header_right_menu') ){
+    echo 'Правое меню';
+    wp_nav_menu(['theme_location' => 'header_right_menu']);
+}?>
+
+<div>
+    <?php get_search_form(); ?>
+</div>
 
 <?php /*
 <section class="slider-example">

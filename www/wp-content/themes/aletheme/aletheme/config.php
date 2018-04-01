@@ -168,7 +168,7 @@ function aletheme_get_options() {
     $options[] = array( 'name' => "Body Style",
                         'desc' => "Change the body font style",
                         'id' => 'ale_bodystyle',
-                        'std' => array('size' => '11px','face' => 'Libre+Baskerville','style' => 'normal','color' => '#111111'),
+                        'std' => array('size' => '12px','face' => 'Playfair+Display','style' => 'normal','color' => '#898989'),
                         'type' => 'typography');
 
 	$options[] = array( "name" => "Social",
@@ -840,9 +840,9 @@ function aletheme_get_images_sizes() {
                 'crop'      => true,
             ),
             array(
-                'name'      => 'post-minibox',
-                'width'     => 500,
-                'height'    => 200,
+                'name'      => 'post-blogsize',
+                'width'     => 326,
+                'height'    => 193,
                 'crop'      => true,
             ),
         ),

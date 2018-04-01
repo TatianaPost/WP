@@ -5,6 +5,8 @@
     <!-- Content -->
     <div class="blog-center-align">
 
+        1<?php get_breadcrumbs(); ?>2
+
         <!-- Blog Caption -->
         <div class="blog-caption">
             <div class="blogtitle"><?php _e('Blog Posts','aletheme'); ?></div>
@@ -109,7 +111,15 @@
         <div class="blog-nav">
             <span class="left"><?php echo get_previous_posts_link(__('&lt; Newer Posts','aletheme')); ?></span>
             <span class="right"><?php echo get_next_posts_link(__('Older Posts &gt;','aletheme')); ?></span>
-            <div class="center"><?php _e('page','aletheme'); ?> <?php echo $paged; ?> <?php _e('of','aletheme'); ?> <?php echo $wp_query->max_num_pages; ?></div>
+            <div class="center">
+                <?php
+
+
+                var_dump($wp_query); die;
+                _e('page','aletheme'); ?> <?php echo $paged; ?>
+                <?php _e('of','aletheme'); ?>
+                <?php echo $wp_query->max_num_pages; ?>
+            </div>
         </div>
 
         <!-- Blog Nav -->

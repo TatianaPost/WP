@@ -21,6 +21,7 @@
                 <li><span><?php echo ale_get_option('footermenutitle'); ?></span>
                     <?php
                     if ( has_nav_menu( 'footer_menu' ) ) {
+                        echo '<br>Footer menu';
                         wp_nav_menu(array(
                             'theme_location'=> 'footer_menu',
                             'menu'			=> 'Footer Menu',

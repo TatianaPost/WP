@@ -14,6 +14,8 @@ $ale_h6 = ale_get_option('h6sty');
     if(ale_get_option('headerfontex')){ $headerfontex = ":".ale_get_option('headerfontex'); } else {$headerfontex =""; }
     if(ale_get_option('mainfontex')){ $mainfontex = ":".ale_get_option('mainfontex'); } else {$mainfontex = "";}
     if(ale_get_option('headerfont')){ echo "<link href='http://fonts.googleapis.com/css?family=".ale_get_option('headerfont').$headerfontex."|".ale_get_option('mainfont').$mainfontex."' rel='stylesheet' type='text/css'>"; }
+
+    if(ale_get_option('bodystyle')){ echo "<link href='http://fonts.googleapis.com/css?family='.ale_get_option('headerfont').'>";}
 ?>
 <style type='text/css'>
     body {
@@ -79,7 +81,7 @@ $ale_h6 = ale_get_option('h6sty');
     }
 
     /*Header Font*/
-    body, .blog-center-align .blog-filter-line .search input[type=search], .blog-center-align .blog-single .right-side ul a,
+    .blog-center-align .blog-filter-line .search input[type=search], .blog-center-align .blog-single .right-side ul a,
     .blog-center-align .blog-single .right-side .location p.loc, .blog-center-align .blog-single .left-side .blog-comments #comment-form input,
     .contacts-center .content .left .contacts, .contacts-center .content .left .info, .contacts-center .content .right input,
     .contacts-center .content .right textarea, .contacts-center .content .contact-footer, .portfolio-center-align .portfolio-categories,
