@@ -113,9 +113,6 @@
             <span class="right"><?php echo get_next_posts_link(__('Older Posts &gt;','aletheme')); ?></span>
             <div class="center">
                 <?php
-
-
-                var_dump($wp_query); die;
                 _e('page','aletheme'); ?> <?php echo $paged; ?>
                 <?php _e('of','aletheme'); ?>
                 <?php echo $wp_query->max_num_pages; ?>
@@ -129,6 +126,18 @@
         <div class="blog-footer">
             <?php ale_part('archives'); ?>
         </div>
+
+
+        <?php if (ale_get_option('fb')):?>
+            <a href="#">facebook</a>
+        <?php endif; ?>
+
+        <div id="map">
+            <?php
+                echo do_shortcode('[ale_map address="Chisinau" width="100%" height="400px"]');
+            ?>
+        </div>
+
 
     </div>
 <?php get_footer(); ?>
