@@ -105,11 +105,6 @@ function ale_contact_email_send($data) {
 
 			Почта: {$data['email']}
 
-			Телефон: {$data['phone']}
-
-			Пол клиента: {$data['genre']}
-
-
 			Сообщение:
 
 			{$data['message']}

@@ -321,6 +321,52 @@ function aletheme_metaboxes($meta_boxes) {
 
     $prefix = "ale_";
 
+    $meta_boxes[] = array(
+        'id'         => 'home_page_metabox',
+        'title'      => 'Home Meta Options',
+        'pages'      => array( 'page', ), // Post type
+        'context'    => 'normal',
+        'priority'   => 'high',
+        'show_names' => true, // Show field names on the left
+        'show_on'    => array( 'key' => 'page-template', 'value' => array('template-contact.php'), ), // Specific post templates to display this metabox
+
+        'fields' => array(
+            array(
+                'name' => 'First titile text',
+                'desc' => 'Insert the text',
+                'id'   => $prefix . 'title_one',
+                'std'  => 'Taxi',
+                'type' => 'text',
+            ),
+            array(
+                'name' => 'Second Title Description',
+                'desc' => 'Insert the text',
+                'id'   => $prefix . 'title_two',
+                'std'  => 'Press',
+                'type' => 'text',
+            ),
+            array(
+                'name' => 'Address',
+                'desc' => 'Insert the text',
+                'id'   => $prefix . 'title_addr',
+                'std'  => 'Press',
+                'type' => 'text',
+            ),
+            array(
+                'name' => 'File Upload',
+                'desc' => 'Insert the text',
+                'id'   => $prefix . 'fileupload',
+                'type' => 'file',
+            ),
+            array(
+                'name' => 'Text Date',
+                'desc' => 'Insert the text',
+                'id'   => $prefix . 'datefield',
+                'type' => 'wysiwyg',
+            ),
+        )
+    );
+
 
     $meta_boxes[] = array(
         'id'         => 'home_page_metabox',
