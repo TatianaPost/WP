@@ -45,7 +45,7 @@ function ale_enqueue_styles() {
 	wp_register_style( 'aletheme_tablepress_css', THEME_URL . '/css/tablepress-responsive-flip.min.css', array(), ALETHEME_THEME_VERSION, 'all');
 
 
-    wp_enqueue_style('aletheme_general_css');
+    wp_enqueue_style('aletheme_style_css');
     wp_enqueue_style('aletheme_awesome_css');
     wp_enqueue_style('aletheme_responsive_css');
     wp_enqueue_style('aletheme_default_css');
@@ -82,17 +82,17 @@ function is_blog () {
  */
 function ale_enqueue_scripts() {
 
-    wp_register_script( 'aletheme_jquery-js', THEME_URL . '/js/jquery.js', array( 'jquery' ), ALETHEME_THEME_VERSION, false );
-    wp_register_script( 'aletheme_jquery-migrate-min', THEME_URL . '/js/jquery-migrate.min.js', array( 'jquery' ), ALETHEME_THEME_VERSION, false );
+    wp_register_script( 'aletheme_jquery', THEME_URL . '/js/jquery.js', array( 'jquery' ), ALETHEME_THEME_VERSION, false );
+    wp_register_script( 'aletheme_jquery_migrate', THEME_URL . '/js/jquery-migrate.min.js', array( 'jquery' ), ALETHEME_THEME_VERSION, false );
 
 
-    wp_register_script( 'aletheme_contact-form-7', THEME_URL . '/js/contact-form-7.js', array( 'jquery' ), ALETHEME_THEME_VERSION, true );
-    wp_register_script( 'aletheme_jquery-formstyler-min', THEME_URL . '/js/jquery.formstyler.min.js', array( 'jquery' ), ALETHEME_THEME_VERSION, true );
+    wp_register_script( 'aletheme_contact_form_7', THEME_URL . '/js/contact-form-7.js', array( 'jquery' ), ALETHEME_THEME_VERSION, true );
+    wp_register_script( 'aletheme_formstyler_min', THEME_URL . '/js/jquery.formstyler.min.js', array( 'jquery' ), ALETHEME_THEME_VERSION, true );
 
-	wp_enqueue_script( 'aletheme_jquery-js' );
-	wp_enqueue_script( 'aletheme_aletheme_jquery-migrate-min' );
-	wp_enqueue_script( 'aletheme_contact-form-7' );
-	wp_enqueue_script( 'aletheme_jquery-formstyler-min' );
+	wp_enqueue_script( 'aletheme_jquery' );
+	wp_enqueue_script( 'aletheme_jquery_migrate' );
+	wp_enqueue_script( 'aletheme_contact_form_7' );
+	wp_enqueue_script( 'aletheme_formstyler_min' );
 }
 add_action( 'wp_enqueue_scripts', 'ale_enqueue_scripts');
 

@@ -32,34 +32,46 @@ function aletheme_get_options() {
 						"type" => "heading");
 
     $options[] = array( "name" => "Site Logo",
-                        "desc" => "Upload or put the site logo link (Default logo size: 133-52px)",
+                        "desc" => "Upload or put the site logo link (Default logo size: 389x64px)",
                         "id" => "ale_sitelogo",
                         "std" => "",
                         "type" => "upload");
 
     $options[] = array( "name" => "Site Footer Logo",
-                        "desc" => "Upload or put the site logo link (Default logo size: 133-52px)",
+                        "desc" => "Upload or put the site logo link (Default logo size: 263x52px)",
                         "id" => "ale_sitelogofooter",
                         "std" => "",
                         "type" => "upload");
-
-    $options[] = array( 'name' => "Manage Background",
-                        'desc' => "Select the background color, or upload a custom background image. Default background is the #f5f5f5 color",
-                        'id' => 'ale_background',
-                        'std' => $background_defaults,
-                        'type' => 'background');
-
-    $options[] = array( "name" => "Show Site Preloader",
-                        "desc" => "Description kakoito.",
-                        "id" => "ale_backcover",
-                        "std" => "1",
-                        "type" => "checkbox");
 
     $options[] = array( "name" => "Uplaod a favicon icon",
                         "desc" => "Upload or put the link of your favicon icon",
                         "id" => "ale_favicon",
                         "std" => "",
                         "type" => "upload");
+
+    $options[] = array( "name" => "First telephone for header",
+                        "desc" => "First telephone",
+                        "id" => "ale_tel1",
+                        "std" => "8 (905) 000 00 00",
+                        "type" => "text");
+
+    $options[] = array( "name" => "Two telephone for header",
+                        "desc" => "Two telephone",
+                        "id" => "ale_tel2",
+                        "std" => "8 (905) 000 00 00",
+                        "type" => "text");
+
+    $options[] = array( "name" => "Email for header",
+                        "desc" => "Email",
+                        "id" => "ale_email",
+                        "std" => "dostava@mail.ru",
+                        "type" => "text");
+
+    $options[] = array( "name" => "Контактная информация",
+                        "desc" => "Контактная информация для футера",
+                        "id" => "ale_contact_footer",
+                        "std" => "Компания «АВС». <br>г. Санкт-Петербург, ул. Якорная, БЦ «Престиж», оф. 20.",
+                        "type" => "editor");
 
 	$options[] = array( "name" => "Comments Style",
 						"desc" => "Choose your comments style. If you want to use DISQUS comments please install and activate this plugin from <a href=\"" . admin_url('plugin-install.php?tab=search&type=term&s=Disqus+Comment+System&plugin-search-input=Search+Plugins') . "\">Wordpress Repository</a>.  If you want to use Livefyre Realtime Comments comments please install and activate this plugin from <a href=\"" . admin_url('plugin-install.php?tab=search&type=term&s=Livefyre+Realtime+Comments&plugin-search-input=Search+Plugins') . "\">Wordpress Repository</a>.",
@@ -68,17 +80,6 @@ function aletheme_get_options() {
 						"type" => "select",
 						"options" => $comments_style);
 
-	$options[] = array( "name" => "AJAX Comments",
-						"desc" => "Use AJAX on comments posting (works only with Alethemes Comments selected).",
-						"id" => "ale_ajax_comments",
-						"std" => "1",
-						"type" => "checkbox");
-
-	$options[] = array( "name" => "Social Sharing",
-						"desc" => "Enable social sharing for posts.",
-						"id" => "ale_social_sharing",
-						"std" => "1",
-						"type" => "checkbox");
 
     $options[] = array( "name" => "Copyrights",
                         "desc" => "Your copyright message.",
@@ -86,17 +87,17 @@ function aletheme_get_options() {
                         "std" => "",
                         "type" => "editor");
 
-    $options[] = array( "name" => "Home Page Slider slug",
-                        "desc" => "Insert the slider slug. Get the slug on Sliders Section",
-                        "id" => "ale_homeslugfull",
-                        "std" => "",
-                        "type" => "text");
+//    $options[] = array( "name" => "Home Page Slider slug",
+//                        "desc" => "Insert the slider slug. Get the slug on Sliders Section",
+//                        "id" => "ale_homeslugfull",
+//                        "std" => "",
+//                        "type" => "text");
 
-    $options[] = array( "name" => "Blog Slider slug",
-                        "desc" => "Insert the slider slug. Get the slug on Sliders Section",
-                        "id" => "ale_blogslugfull",
-                        "std" => "",
-                        "type" => "text");
+//    $options[] = array( "name" => "Blog Slider slug",
+//                        "desc" => "Insert the slider slug. Get the slug on Sliders Section",
+//                        "id" => "ale_blogslugfull",
+//                        "std" => "",
+//                        "type" => "text");
 
     $options[] = array( "name" => "Typography",
                         "type" => "heading");
@@ -209,11 +210,6 @@ function aletheme_get_options() {
                         "id" => "ale_insta",
                         "std" => "",
                         "type" => "text");
-    $options[] = array( "name" => "Email",
-                        "desc" => "Your email",
-                        "id" => "ale_emailcont",
-                        "std" => "",
-                        "type" => "text");
     $options[] = array( "name" => "Show RSS",
                         "desc" => "Check if you want to show the RSS icon on your site",
                         "id" => "ale_rssicon",
@@ -262,17 +258,6 @@ function aletheme_get_options() {
                         "id" => "ale_footermenutitle",
                         "std" => "Select a category",
                         "type" => "text");
-
-    $options[] = array( "name" => "Footer menu title",
-                        "desc" => "Insert the footer menu title",
-                        "id" => "ale_footermenutitle_1",
-                        "std" => "",
-                        "type" => "images",
-                        "options" => array(
-                            'image_1' => $imagepath.'/1col.png',
-                            'image_2' => $imagepath.'/2cl.png',
-                            'image_3' => $imagepath.'/2cr.png', ),
-        );
 
 
     $options[] = array( "name" => "My options",
@@ -904,24 +889,24 @@ function aletheme_get_images_sizes() {
  */
 function aletheme_get_post_types() {
 	return array(
-        'gallery' => array(
-            'config' => array(
-                'public' => true,
-                'menu_position' => 20,
-                'has_archive'   => true,
-                'supports'=> array(
-                    'title',
-                    'editor',
-                    'thumbnail',
-                ),
-                'show_in_nav_menus'=> true,
-            ),
-            'singular' => 'Gallery',
-            'multiple' => 'Galleries',
-            'columns'    => array(
-                'first_image',
-            )
-        ),
+//        'gallery' => array(
+//            'config' => array(
+//                'public' => true,
+//                'menu_position' => 20,
+//                'has_archive'   => true,
+//                'supports'=> array(
+//                    'title',
+//                    'editor',
+//                    'thumbnail',
+//                ),
+//                'show_in_nav_menus'=> true,
+//            ),
+//            'singular' => 'Gallery',
+//            'multiple' => 'Galleries',
+//            'columns'    => array(
+//                'first_image',
+//            )
+//        ),
         'services' => array(
             'config' => array(
                 'public' => true,
