@@ -159,3 +159,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Load TGM plugins.
+ */
+require get_template_directory() . '/tgm/theming.php';
