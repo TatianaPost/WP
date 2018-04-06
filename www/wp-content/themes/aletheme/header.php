@@ -25,32 +25,6 @@
                 ]);
             }?>
 
-            <nav class="menu-glavnoe-container">
-                <ul id="topMenu" class="nav-justified">
-                    <li  class="menu-item_type menu-item-object-page">
-                        <a href='' class="menu-image-title-after"><span class="menu-image-title">О компании</span></a>
-                    </li>
-                    <li  class="menu-item_type menu-item-object-page">
-                        <a href='' class="menu-image-title-after"><span class="menu-image-title">Сертификаты</span></a>
-                    </li>
-                    <li  class="menu-item_type menu-item-object-page">
-                        <a href='' class="menu-image-title-after"><span class="menu-image-title">Доставка и Оплата</span></a>
-                    </li>
-                    <li  class="menu-item_type menu-item-object-page">
-                        <a href='' class="menu-image-title-after"><span class="menu-image-title">Цены</span></a>
-                    </li>
-                    <li  class="menu-item_type menu-item-object-page">
-                        <a href='' class="menu-image-title-after"><span class="menu-image-title">Акции</span></a>
-                    </li>
-                    <li  class="menu-item_type menu-item-object-page">
-                        <a href='' class="menu-image-title-after"><span class="menu-image-title">Отзывы</span></a>
-                    </li>
-                    <li  class="menu-item_type menu-item-object-page">
-                        <a href='' class="menu-image-title-after"><span class="menu-image-title">Контакты</span></a>
-                    </li>
-                </ul>
-            </nav>
-
             <a href="#data" class="btn-default btn-order">Заказать</a>
         </div>
     </div>
