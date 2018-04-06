@@ -2,31 +2,17 @@
 <footer class="shadow">
     <div class="top-row">
         <div class="container">
-            <nav class="menu-glavnoe-container">
-                <ul id="topMenu" class="nav-justified">
-                    <li  class="menu-item_type menu-item-object-page">
-                        <a href='' class="menu-image-title-after"><span class="menu-image-title">О компании</span></a>
-                    </li>
-                    <li  class="menu-item_type menu-item-object-page">
-                        <a href='' class="menu-image-title-after"><span class="menu-image-title">Сертификаты</span></a>
-                    </li>
-                    <li  class="menu-item_type menu-item-object-page">
-                        <a href='' class="menu-image-title-after"><span class="menu-image-title">Доставка и Оплата</span></a>
-                    </li>
-                    <li  class="menu-item_type menu-item-object-page">
-                        <a href='' class="menu-image-title-after"><span class="menu-image-title">Цены</span></a>
-                    </li>
-                    <li  class="menu-item_type menu-item-object-page">
-                        <a href='' class="menu-image-title-after"><span class="menu-image-title">Акции</span></a>
-                    </li>
-                    <li  class="menu-item_type menu-item-object-page">
-                        <a href='' class="menu-image-title-after"><span class="menu-image-title">Отзывы</span></a>
-                    </li>
-                    <li  class="menu-item_type menu-item-object-page">
-                        <a href='' class="menu-image-title-after"><span class="menu-image-title">Контакты</span></a>
-                    </li>
-                </ul>
-            </nav>
+            <?php if( has_nav_menu('main_menu') ){
+                wp_nav_menu([
+                    'theme_location' => 'main_menu',
+                    'menu' => 'Main menu',
+                    'menu_class' => 'nav-justified',
+                    'menu_id' => 'topMenu',
+                    'container' => 'nav',
+                    'container_class' => 'menu-glavnoe-container',
+                    'walker' => '',
+                ]);
+            }?>
             <a href="#data" class="btn-default btn-order btn-order-footer-nav">Заказать</a>
         </div>
     </div>

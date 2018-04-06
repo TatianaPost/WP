@@ -12,9 +12,17 @@
 <header>
     <div class="top-row shadow">
         <div class="container">
-            
+
             <?php if( has_nav_menu('main_menu') ){
-                wp_nav_menu(['theme_location' => 'main_menu']);
+                wp_nav_menu([
+                        'theme_location' => 'main_menu',
+                        'menu' => 'Main menu',
+                        'menu_class' => 'nav-justified',
+                        'menu_id' => 'topMenu',
+                        'container' => 'nav',
+                        'container_class' => 'menu-glavnoe-container',
+                        'walker' => '',
+                ]);
             }?>
 
             <nav class="menu-glavnoe-container">
