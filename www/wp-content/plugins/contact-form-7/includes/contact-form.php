@@ -342,7 +342,6 @@ class WPCF7_ContactForm {
 
 		if ( $this->is_posted() ) {
 			$submission = WPCF7_Submission::get_instance();
-
 			switch ( $submission->get_status() ) {
 				case 'validation_failed':
 					$class .= ' invalid';
