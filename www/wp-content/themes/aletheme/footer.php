@@ -132,16 +132,29 @@
                     </a>
                 </div>
 
-                <?php if(ale_get_option('copyrights')){ ?>
-                    <div class="dev">
-                        © <?php echo get_bloginfo('name');?>, <?php echo date('Y');?>
+                <div class="dev">
+                    © <?php echo get_bloginfo('name');?>, <?php echo date('Y');?>
+                    <?php if(ale_get_option('copyrights')){ ?>
                         <br> <?php echo ale_get_option('copyrights') ?>
-                    </div>
-                <?php } ?>
+                    <?php } ?>
+                </div>
             </div>
         </div>
     </div>
 </footer>
+
+
+<div id="callback" class="shadow" style="display: inline-block;">
+    <div role="form" class="wpcf7" id="wpcf7-f523-o2" lang="ru-RU" dir="ltr">
+        <div class="screen-reader-response"></div>
+        <?php
+            echo do_shortcode( '[contact-form-7 id="35" title="Заказать звонок"]' );
+        ?>
+    </div>
+    <button data-fancybox-close="" class="fancybox-close-small"></button>
+</div>
+
+
 
 <!-- SCRIPT -->
 <?php wp_footer(); ?>
