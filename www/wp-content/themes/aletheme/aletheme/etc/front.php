@@ -39,6 +39,7 @@ add_action('wp_print_scripts', 'ale_init_js_vars');
  */
 function ale_enqueue_styles() {
 	wp_register_style( 'aletheme_style_css', THEME_URL . '/css/style.css', array(), ALETHEME_THEME_VERSION, 'all');
+	wp_register_style( 'aletheme_fancybox', THEME_URL . '/css/jquery.fancybox.min.css', array(), ALETHEME_THEME_VERSION, 'all');
 	wp_register_style( 'aletheme_awesome_css', THEME_URL . '/css/font-awesome.min.css', array(), ALETHEME_THEME_VERSION, 'all');
 	wp_register_style( 'aletheme_responsive_css', THEME_URL . '/css/responsive.dataTables.min.css', array(), ALETHEME_THEME_VERSION, 'all');
 	wp_register_style( 'aletheme_default_css', THEME_URL . '/css/default.min.css', array(), ALETHEME_THEME_VERSION, 'all');
@@ -46,6 +47,7 @@ function ale_enqueue_styles() {
 
 
     wp_enqueue_style('aletheme_style_css');
+    wp_enqueue_style('aletheme_fancybox');
     wp_enqueue_style('aletheme_awesome_css');
     wp_enqueue_style('aletheme_responsive_css');
     wp_enqueue_style('aletheme_default_css');
@@ -85,14 +87,21 @@ function ale_enqueue_scripts() {
     wp_register_script( 'aletheme_jquery', THEME_URL . '/js/jquery.js', array( 'jquery' ), ALETHEME_THEME_VERSION, false );
     wp_register_script( 'aletheme_jquery_migrate', THEME_URL . '/js/jquery-migrate.min.js', array( 'jquery' ), ALETHEME_THEME_VERSION, false );
 
-
-    wp_register_script( 'aletheme_contact_form_7', THEME_URL . '/js/contact-form-7.js', array( 'jquery' ), ALETHEME_THEME_VERSION, true );
     wp_register_script( 'aletheme_formstyler_min', THEME_URL . '/js/jquery.formstyler.min.js', array( 'jquery' ), ALETHEME_THEME_VERSION, true );
+    wp_register_script( 'aletheme_fancybox', THEME_URL . '/js/jquery.fancybox.min.js', array( 'jquery' ), ALETHEME_THEME_VERSION, false );
+    wp_register_script( 'aletheme_inputmask', THEME_URL . '/js/inputmask.js', array( 'jquery' ), ALETHEME_THEME_VERSION, false );
+    wp_register_script( 'aletheme_inputmask.extensions', THEME_URL . '/js/inputmask.extensions.js', array( 'jquery' ), ALETHEME_THEME_VERSION, false );
+    wp_register_script( 'aletheme_jquery.inputmask', THEME_URL . '/js/jquery.inputmask.js', array( 'jquery' ), ALETHEME_THEME_VERSION, false );
+    wp_register_script( 'aletheme_custom', THEME_URL . '/js/custom.js', array( 'jquery' ), ALETHEME_THEME_VERSION, true );
 
 	wp_enqueue_script( 'aletheme_jquery' );
 	wp_enqueue_script( 'aletheme_jquery_migrate' );
-	wp_enqueue_script( 'aletheme_contact_form_7' );
 	wp_enqueue_script( 'aletheme_formstyler_min' );
+	wp_enqueue_script( 'aletheme_fancybox' );
+	wp_enqueue_script( 'aletheme_inputmask' );
+	wp_enqueue_script( 'aletheme_inputmask.extensions' );
+	wp_enqueue_script( 'aletheme_jquery.inputmask' );
+	wp_enqueue_script( 'aletheme_custom' );
 }
 add_action( 'wp_enqueue_scripts', 'ale_enqueue_scripts');
 
@@ -195,7 +204,6 @@ function ale_footer() {
 		echo $info;
 	}
 	?>
-	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 <?php
 }
 

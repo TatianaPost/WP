@@ -579,7 +579,7 @@ th {
 }
 
 .fancybox-close-small:after {
-    content: "Г—";
+    content: "×";
     position: absolute;
     top: 5px;
     right: 5px;
@@ -3423,6 +3423,12 @@ footer .top-row {
 #utochnenie {
     width: 265px;
     padding: 30px 15px 10px
+}
+
+#data.fancybox-content,
+#callback.fancybox-content,
+#utochnenie.fancybox-content {
+    height: auto;
 }
 
 .wpcf7 br {
