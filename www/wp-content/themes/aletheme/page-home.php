@@ -19,7 +19,32 @@ get_header();?>
         <?php endif; ?>
 
     </div><!-- #primary -->
+
 </main>
+
+<!-- advantages -->
+<section class="advantages">
+    <div class="container">
+        <?php if(ale_get_option('order_block_text')){ ?>
+            <h2><?php echo ale_get_option('advantages_block') ?></h2>
+        <?php } ?>
+
+        <div class="flexbox">
+            <?php global $query_string;
+            query_posts('post_type=services'.'&posts_per_page=-1&order=ASC');?>
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                <div class="advant-item">
+                    <div class="advant-icon">
+                        <?php echo get_the_post_thumbnail( $post->ID, 'service-thumba' ) ?>
+                    </div>
+                    <div class="title"><?php the_title(); ?></div>
+                    <div class="advant-text"><?php the_content(); ?></div>
+                </div>
+            <?php endwhile;  endif;  ?>
+        </div>
+    </div>
+</section>
+<!-- /advantages -->
 
 <?php get_footer();
 
