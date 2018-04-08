@@ -92,6 +92,7 @@ function ale_enqueue_scripts() {
     wp_register_script( 'aletheme_inputmask', THEME_URL . '/js/inputmask.js', array( 'jquery' ), ALETHEME_THEME_VERSION, false );
     wp_register_script( 'aletheme_inputmask.extensions', THEME_URL . '/js/inputmask.extensions.js', array( 'jquery' ), ALETHEME_THEME_VERSION, false );
     wp_register_script( 'aletheme_jquery.inputmask', THEME_URL . '/js/jquery.inputmask.js', array( 'jquery' ), ALETHEME_THEME_VERSION, false );
+    wp_register_script( 'aletheme_ya_map', 'https://api-maps.yandex.ru/2.1/?lang=ru_RU', array(), false);
     wp_register_script( 'aletheme_custom', THEME_URL . '/js/custom.js', array( 'jquery' ), ALETHEME_THEME_VERSION, true );
 
 	wp_enqueue_script( 'aletheme_jquery' );
@@ -101,6 +102,11 @@ function ale_enqueue_scripts() {
 	wp_enqueue_script( 'aletheme_inputmask' );
 	wp_enqueue_script( 'aletheme_inputmask.extensions' );
 	wp_enqueue_script( 'aletheme_jquery.inputmask' );
+
+	if(is_page_template('template-contact.php')){
+        wp_enqueue_script('aletheme_ya_map');
+    }
+
 	wp_enqueue_script( 'aletheme_custom' );
 }
 add_action( 'wp_enqueue_scripts', 'ale_enqueue_scripts');

@@ -20,7 +20,7 @@ get_header();
             <?php the_content(); ?>
         <?php endwhile; endif; ?>
 
-        <div id="map_contact" style="width:100%; height:400px"></div>
+        <div id="map_contact"></div>
 
     </div><!-- #primary -->
 </main>

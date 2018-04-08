@@ -4028,7 +4028,7 @@ footer .btn-order:after {
         border-color: rgba(0, 0, 0, .74) transparent transparent transparent
     }
     .slider-footer .slider-footer-ul li {
-        width: 168px
+        width: 138px
     }
     .slider-footer .slider-footer-ul .sub-menu li .sub-menu {
         display: none
@@ -5165,4 +5165,12 @@ footer .ya-phone i {
 }
 .form__label{
     font-size: 14px;
+}
+
+#map_contact{
+    overflow: hidden;
+    width:100%;
+    height:400px;
+    background: #eee url(../images/loader.gif) center center no-repeat;
+    box-shadow: 1px 1px 7px -2px #000;
 }

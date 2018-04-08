@@ -95,5 +95,38 @@
 
 jQuery(document).ready(function(){
     jQuery('input[type=tel]').inputmask("+7 (999) 999-99-99");  //static mask
+
+
+
+    if (jQuery('#map_contact').length > 0){
+        ymaps.ready(function () {
+            var map = new ymaps.Map("map_contact", {
+                    center: [59.942467, 30.421882],
+                    zoom: 14,
+                    type: "yandex#map"
+                }
+            );
+            map.controls.add(
+                new ymaps.control.ZoomControl()
+            );
+            var secondMark = new ymaps.Placemark(
+                [59.942467, 30.421882], {
+                    hintContent: 'Компания «АВС»',
+                    balloonContent: "Компания «АВС». г. Санкт-Петербург, ул. Якорная, БЦ «Престиж», оф. 20."
+                },
+                {
+                    // iconLayout: 'default#image',
+                    // iconImageHref: 'http://clicke.ru/image/catalog/placeholder.png',
+                    // iconImageSize: [40, 56],
+                    // iconImageOffset: [-20, -50]
+                }
+            );
+
+
+            map.geoObjects.add(secondMark);
+        });
+    }
+
+
 });
 
