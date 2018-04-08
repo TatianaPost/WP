@@ -13,7 +13,7 @@
                     'walker' => '',
                 ]);
             }?>
-            <a href="#data" class="btn-default btn-order btn-order-footer-nav">Заказать</a>
+            <a data-fancybox data-src="#data" href="javascript:;"  class="btn-default btn-order btn-order-footer-nav">Заказать</a>
         </div>
     </div>
     <div class="footer-menu">
@@ -141,6 +141,7 @@
             </div>
         </div>
     </div>
+
 </footer>
 
 

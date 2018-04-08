@@ -3485,6 +3485,9 @@ footer .top-row {
     line-height: 1.7;
     margin: 8px 0 0
 }
+.advant-text p{
+    text-align: center;
+}
 
 .review {
     padding-top: 30px;

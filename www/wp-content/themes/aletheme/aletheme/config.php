@@ -91,13 +91,19 @@ function aletheme_get_options() {
                         "desc" => "Блок 'Заказать' внизу страницы",
                         "id" => "ale_order_block_text",
                         "std" => "",
-                        "type" => "text");
+                        "type" => "editor");
 
     $options[] = array( "name" => "Телефон для блока 'Заказать'",
                     "desc" => "Блок 'Заказать' внизу страницы",
                     "id" => "ale_order_block_phone",
                     "std" => "",
                     "type" => "text");
+
+    $options[] = array( "name" => "Заголовок для блока с преимуществами",
+                    "desc" => "Блок 'Наши преимущества' внизу страницы",
+                    "id" => "ale_advantages_block",
+                    "std" => "",
+                    "type" => "editor");
 
 //    $options[] = array( "name" => "Home Page Slider slug",
 //                        "desc" => "Insert the slider slug. Get the slug on Sliders Section",
@@ -889,6 +895,14 @@ function aletheme_get_images_sizes() {
                 'crop'      => true,
             ),
         ),
+        'services' => array(
+            array(
+                'name'      => 'service-thumba',
+                'width'     => 64,
+                'height'    => 54,
+                'crop'      => true,
+            ),
+        ),
 
 
     );
@@ -932,8 +946,8 @@ function aletheme_get_post_types() {
                 ),
                 'show_in_nav_menus'=> true,
             ),
-            'singular' => 'Сервис',
-            'multiple' => 'Сервисы'
+            'singular' => 'Преимущество',
+            'multiple' => 'Преимущества'
         ),
     );
 }
@@ -958,26 +972,26 @@ function aletheme_get_taxonomies() {
         ),
 
 
-        'services-category'    => array(
-            'for'        => array('services'),
-            'config'    => array(
-                'sort'        => true,
-                'args'        => array('orderby' => 'term_order'),
-                'hierarchical' => true,
-            ),
-            'singular'    => 'Категория',
-            'multiple'    => 'Категории',
-        ),
-        'price'    => array(
-            'for'        => array('services'),
-            'config'    => array(
-                'sort'        => true,
-                'args'        => array('orderby' => 'term_order'),
-                'hierarchical' => true,
-            ),
-            'singular'    => 'Цена сервиса',
-            'multiple'    => 'Цены сервисов',
-        ),
+//        'services-category'    => array(
+//            'for'        => array('services'),
+//            'config'    => array(
+//                'sort'        => true,
+//                'args'        => array('orderby' => 'term_order'),
+//                'hierarchical' => true,
+//            ),
+//            'singular'    => 'Категория',
+//            'multiple'    => 'Категории',
+//        ),
+//        'price'    => array(
+//            'for'        => array('services'),
+//            'config'    => array(
+//                'sort'        => true,
+//                'args'        => array('orderby' => 'term_order'),
+//                'hierarchical' => true,
+//            ),
+//            'singular'    => 'Цена сервиса',
+//            'multiple'    => 'Цены сервисов',
+//        ),
     );
 }
 
