@@ -19,6 +19,25 @@
     <div class="footer-menu">
         <div class="container">
             <div class="flexbox">
+
+                <hr>
+                <?php if( has_nav_menu('footer_menu_bottom')){
+                    echo '222';
+                    wp_nav_menu([
+                        'theme_location' => 'footer_menu_bottom',
+                        'menu' => 'Bottom footer menu',
+                        'menu_class' => 'nav-justified',
+                        'menu_id' => 'topMenu',
+                        'container' => 'nav',
+                        'container_class' => 'menu-glavnoe-container',
+                        'walker' => '',
+                        'depth' => '-1',
+                    ]);
+                }
+                ?>
+                <?php the_widget( 'WP_Nav_Menu_Widget', 'dropdown=0&hierarchical=1' ); ?>
+                <hr>
+
                 <nav class="footer-menu-item">
                     <ul id="menu-uslugi-2" class="">
                         <li class="menu-item menu-item-type-post_type menu-item-object-materiali current-menu-item menu-item-has-children menu-item-69">
