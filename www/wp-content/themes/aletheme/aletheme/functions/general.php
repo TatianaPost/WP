@@ -1173,6 +1173,16 @@ function ale_remove_contact7_form($content) {
 	return $content;
 }
 
+function ale_href_tel($tel) {
+    $pattern = '/[\s\(\)]/';
+    $replace = '';
+    $tel = preg_replace($pattern, $replace, $tel);
+
+    $pattern = '/^8/';
+    $replace = '+7';
+    return preg_replace($pattern, $replace, $tel);
+}
+
 /**
  * Check if it's a blog page
  * @global object $post

@@ -3437,6 +3437,16 @@ footer .top-row {
     height: auto;
 }
 
+#data{
+    padding-top: 3px;
+}
+#data p{
+    margin: 0 0 6px;
+}
+#data .form-control{
+    margin-bottom: 0px;
+}
+
 .wpcf7 br {
     display: none
 }

@@ -152,6 +152,9 @@
     <?php echo do_shortcode( '[contact-form-7 id="101" title="Отдел клиентского сервиса"]' );  ?>
 </div>
 
+<div style="display: none;" id="data" class="shadow">
+    <?php echo do_shortcode( '[contact-form-7 id="102" title="Заказать"]' );  ?>
+</div>
 
 
 

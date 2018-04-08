@@ -87,6 +87,18 @@ function aletheme_get_options() {
                         "std" => "",
                         "type" => "editor");
 
+    $options[] = array( "name" => "Текст для блока 'Заказать'",
+                        "desc" => "Блок 'Заказать' внизу страницы",
+                        "id" => "ale_order_block_text",
+                        "std" => "",
+                        "type" => "text");
+
+    $options[] = array( "name" => "Телефон для блока 'Заказать'",
+                    "desc" => "Блок 'Заказать' внизу страницы",
+                    "id" => "ale_order_block_phone",
+                    "std" => "",
+                    "type" => "text");
+
 //    $options[] = array( "name" => "Home Page Slider slug",
 //                        "desc" => "Insert the slider slug. Get the slug on Sliders Section",
 //                        "id" => "ale_homeslugfull",

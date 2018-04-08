@@ -50,12 +50,12 @@
                 <div class="contact">
                     <?php if(ale_get_option('tel1')){ ?>
                         <span class="ya-phone">
-                            <a class="tel" href="tel:79050000000"><span><?php echo ale_get_option('tel1') ?></span></a>
+                            <a class="tel" href="tel:<?php echo ale_href_tel(ale_get_option('tel1')); ?>"><span><?php echo ale_get_option('tel1') ?></span></a>
                         </span>
                     <?php } ?>
 
                     <?php if(ale_get_option('tel2')){ ?>
-                        <a class="tel" href="tel:79050000000"><span><?php echo ale_get_option('tel2') ?></span></a>
+                        <a class="tel" href="tel:<?php echo ale_href_tel(ale_get_option('tel2')); ?>"><span><?php echo ale_get_option('tel2') ?></span></a>
                     <?php } ?>
 
                     <?php if(ale_get_option('email')){ ?>
