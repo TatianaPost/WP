@@ -99,78 +99,78 @@ function aletheme_get_options() {
 //                        "std" => "",
 //                        "type" => "text");
 
-    $options[] = array( "name" => "Typography",
-                        "type" => "heading");
-
-    $options[] = array( "name" => "Select the body Font from Google Library",
-                        "desc" => "The default Font is - Raleway",
-                        "id" => "ale_headerfont",
-                        "std" => "Raleway",
-                        "type" => "select",
-                        "options" => $headerfont);
-
-    $options[] = array( "name" => "Select the body Font (Extended) from Google Library",
-                        "desc" => "The default Font (extended) is - 600",
-                        "id" => "ale_headerfontex",
-                        "std" => "600",
-                        "type" => "text",
-                        );
-
-    $options[] = array( "name" => "Select the Headers Font from Google Library",
-                        "desc" => "The default Font is - Libre Baskerville",
-                        "id" => "ale_mainfont",
-                        "std" => "Libre+Baskerville",
-                        "type" => "select",
-                        "options" => $headerfont);
-
-    $options[] = array( "name" => "Select the Headers Font (Extended) from Google Library",
-                        "desc" => "The default Font (extended) is - 400,400italic",
-                        "id" => "ale_mainfontex",
-                        "std" => "400,400italic",
-                        "type" => "text",
-                        );
-
-    $options[] = array( 'name' => "H1 Style",
-                        'desc' => "Change the h1 style",
-                        'id' => 'ale_h1sty',
-                        'std' => array('size' => '22px','face' => 'Libre+Baskerville','style' => 'normal','color' => '#111111'),
-                        'type' => 'typography');
-
-    $options[] = array( 'name' => "H2 Style",
-                        'desc' => "Change the h2 style",
-                        'id' => 'ale_h2sty',
-                        'std' => array('size' => '20px','face' => 'Libre+Baskerville','style' => 'normal','color' => '#111111'),
-                        'type' => 'typography');
-
-    $options[] = array( 'name' => "H3 Style",
-                        'desc' => "Change the h3 style",
-                        'id' => 'ale_h3sty',
-                        'std' => array('size' => '18px','face' => 'Libre+Baskerville','style' => 'normal','color' => '#111111'),
-                        'type' => 'typography');
-
-    $options[] = array( 'name' => "H4 Style",
-                        'desc' => "Change the h4 style",
-                        'id' => 'ale_h4sty',
-                        'std' => array('size' => '16px','face' => 'Libre+Baskerville','style' => 'normal','color' => '#111111'),
-                        'type' => 'typography');
-
-    $options[] = array( 'name' => "H5 Style",
-                        'desc' => "Change the h5 style",
-                        'id' => 'ale_h5sty',
-                        'std' => array('size' => '14px','face' => 'Libre+Baskerville','style' => 'normal','color' => '#111111'),
-                        'type' => 'typography');
-
-    $options[] = array( 'name' => "H6 Style",
-                        'desc' => "Change the h6 style",
-                        'id' => 'ale_h6sty',
-                        'std' => array('size' => '12px','face' => 'Libre+Baskerville','style' => 'normal','color' => '#111111'),
-                        'type' => 'typography');
-
-    $options[] = array( 'name' => "Body Style",
-                        'desc' => "Change the body font style",
-                        'id' => 'ale_bodystyle',
-                        'std' => array('size' => '12px','face' => 'Playfair+Display','style' => 'normal','color' => '#898989'),
-                        'type' => 'typography');
+//    $options[] = array( "name" => "Typography",
+//                        "type" => "heading");
+//
+//    $options[] = array( "name" => "Select the body Font from Google Library",
+//                        "desc" => "The default Font is - Raleway",
+//                        "id" => "ale_headerfont",
+//                        "std" => "Raleway",
+//                        "type" => "select",
+//                        "options" => $headerfont);
+//
+//    $options[] = array( "name" => "Select the body Font (Extended) from Google Library",
+//                        "desc" => "The default Font (extended) is - 600",
+//                        "id" => "ale_headerfontex",
+//                        "std" => "600",
+//                        "type" => "text",
+//                        );
+//
+//    $options[] = array( "name" => "Select the Headers Font from Google Library",
+//                        "desc" => "The default Font is - Libre Baskerville",
+//                        "id" => "ale_mainfont",
+//                        "std" => "Libre+Baskerville",
+//                        "type" => "select",
+//                        "options" => $headerfont);
+//
+//    $options[] = array( "name" => "Select the Headers Font (Extended) from Google Library",
+//                        "desc" => "The default Font (extended) is - 400,400italic",
+//                        "id" => "ale_mainfontex",
+//                        "std" => "400,400italic",
+//                        "type" => "text",
+//                        );
+//
+//    $options[] = array( 'name' => "H1 Style",
+//                        'desc' => "Change the h1 style",
+//                        'id' => 'ale_h1sty',
+//                        'std' => array('size' => '22px','face' => 'Libre+Baskerville','style' => 'normal','color' => '#111111'),
+//                        'type' => 'typography');
+//
+//    $options[] = array( 'name' => "H2 Style",
+//                        'desc' => "Change the h2 style",
+//                        'id' => 'ale_h2sty',
+//                        'std' => array('size' => '20px','face' => 'Libre+Baskerville','style' => 'normal','color' => '#111111'),
+//                        'type' => 'typography');
+//
+//    $options[] = array( 'name' => "H3 Style",
+//                        'desc' => "Change the h3 style",
+//                        'id' => 'ale_h3sty',
+//                        'std' => array('size' => '18px','face' => 'Libre+Baskerville','style' => 'normal','color' => '#111111'),
+//                        'type' => 'typography');
+//
+//    $options[] = array( 'name' => "H4 Style",
+//                        'desc' => "Change the h4 style",
+//                        'id' => 'ale_h4sty',
+//                        'std' => array('size' => '16px','face' => 'Libre+Baskerville','style' => 'normal','color' => '#111111'),
+//                        'type' => 'typography');
+//
+//    $options[] = array( 'name' => "H5 Style",
+//                        'desc' => "Change the h5 style",
+//                        'id' => 'ale_h5sty',
+//                        'std' => array('size' => '14px','face' => 'Libre+Baskerville','style' => 'normal','color' => '#111111'),
+//                        'type' => 'typography');
+//
+//    $options[] = array( 'name' => "H6 Style",
+//                        'desc' => "Change the h6 style",
+//                        'id' => 'ale_h6sty',
+//                        'std' => array('size' => '12px','face' => 'Libre+Baskerville','style' => 'normal','color' => '#111111'),
+//                        'type' => 'typography');
+//
+//    $options[] = array( 'name' => "Body Style",
+//                        'desc' => "Change the body font style",
+//                        'id' => 'ale_bodystyle',
+//                        'std' => array('size' => '12px','face' => 'Playfair+Display','style' => 'normal','color' => '#898989'),
+//                        'type' => 'typography');
 
 	$options[] = array( "name" => "Social",
 						"type" => "heading");
@@ -306,51 +306,51 @@ function aletheme_metaboxes($meta_boxes) {
 
     $prefix = "ale_";
 
-    $meta_boxes[] = array(
-        'id'         => 'home_page_metabox',
-        'title'      => 'Home Meta Options',
-        'pages'      => array( 'page', ), // Post type
-        'context'    => 'normal',
-        'priority'   => 'high',
-        'show_names' => true, // Show field names on the left
-        'show_on'    => array( 'key' => 'page-template', 'value' => array('template-contact.php'), ), // Specific post templates to display this metabox
-
-        'fields' => array(
-            array(
-                'name' => 'First titile text',
-                'desc' => 'Insert the text',
-                'id'   => $prefix . 'title_one',
-                'std'  => 'Taxi',
-                'type' => 'text',
-            ),
-            array(
-                'name' => 'Second Title Description',
-                'desc' => 'Insert the text',
-                'id'   => $prefix . 'title_two',
-                'std'  => 'Press',
-                'type' => 'text',
-            ),
-            array(
-                'name' => 'Address',
-                'desc' => 'Insert the text',
-                'id'   => $prefix . 'title_addr',
-                'std'  => 'Press',
-                'type' => 'text',
-            ),
-            array(
-                'name' => 'File Upload',
-                'desc' => 'Insert the text',
-                'id'   => $prefix . 'fileupload',
-                'type' => 'file',
-            ),
-            array(
-                'name' => 'Text Date',
-                'desc' => 'Insert the text',
-                'id'   => $prefix . 'datefield',
-                'type' => 'wysiwyg',
-            ),
-        )
-    );
+//    $meta_boxes[] = array(
+//        'id'         => 'home_page_metabox',
+//        'title'      => 'Home Meta Options',
+//        'pages'      => array( 'page', ), // Post type
+//        'context'    => 'normal',
+//        'priority'   => 'high',
+//        'show_names' => true, // Show field names on the left
+//        'show_on'    => array( 'key' => 'page-template', 'value' => array('template-contact.php'), ), // Specific post templates to display this metabox
+//
+//        'fields' => array(
+//            array(
+//                'name' => 'First titile text',
+//                'desc' => 'Insert the text',
+//                'id'   => $prefix . 'title_one',
+//                'std'  => 'Taxi',
+//                'type' => 'text',
+//            ),
+//            array(
+//                'name' => 'Second Title Description',
+//                'desc' => 'Insert the text',
+//                'id'   => $prefix . 'title_two',
+//                'std'  => 'Press',
+//                'type' => 'text',
+//            ),
+//            array(
+//                'name' => 'Address',
+//                'desc' => 'Insert the text',
+//                'id'   => $prefix . 'title_addr',
+//                'std'  => 'Press',
+//                'type' => 'text',
+//            ),
+//            array(
+//                'name' => 'File Upload',
+//                'desc' => 'Insert the text',
+//                'id'   => $prefix . 'fileupload',
+//                'type' => 'file',
+//            ),
+//            array(
+//                'name' => 'Text Date',
+//                'desc' => 'Insert the text',
+//                'id'   => $prefix . 'datefield',
+//                'type' => 'wysiwyg',
+//            ),
+//        )
+//    );
 
 
     $meta_boxes[] = array(
@@ -659,7 +659,7 @@ function aletheme_metaboxes($meta_boxes) {
         'context'    => 'normal',
         'priority'   => 'high',
         'show_names' => true, // Show field names on the left
-        'show_on'    => array( 'key' => 'page-template', 'value' => array('template-about.php'), ), // Specific post templates to display this metabox
+        'show_on'    => array( 'key' => 'page-template', 'value' => array('template-products.php'), ), // Specific post templates to display this metabox
         'fields' => array(
             array(
                 'name' => 'First member Name',

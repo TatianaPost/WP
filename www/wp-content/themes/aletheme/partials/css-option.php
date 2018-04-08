@@ -1,14 +1,14 @@
 <?php
-$ale_background = ale_get_option('background');
-$ale_headerfont = ale_get_option('headerfont');
-$ale_mainfont = ale_get_option('mainfont');
-$ale_font = ale_get_option('bodystyle');
-$ale_h1 = ale_get_option('h1sty');
-$ale_h2 = ale_get_option('h2sty');
-$ale_h3 = ale_get_option('h3sty');
-$ale_h4 = ale_get_option('h4sty');
-$ale_h5 = ale_get_option('h5sty');
-$ale_h6 = ale_get_option('h6sty');
+//$ale_background = ale_get_option('background');
+//$ale_headerfont = ale_get_option('headerfont');
+//$ale_mainfont = ale_get_option('mainfont');
+//$ale_font = ale_get_option('bodystyle');
+//$ale_h1 = ale_get_option('h1sty');
+//$ale_h2 = ale_get_option('h2sty');
+//$ale_h3 = ale_get_option('h3sty');
+//$ale_h4 = ale_get_option('h4sty');
+//$ale_h5 = ale_get_option('h5sty');
+//$ale_h6 = ale_get_option('h6sty');
 ?>
 <?php
     if(ale_get_option('headerfontex')){ $headerfontex = ":".ale_get_option('headerfontex'); } else {$headerfontex =""; }

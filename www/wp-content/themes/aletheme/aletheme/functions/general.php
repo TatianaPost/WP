@@ -1259,7 +1259,7 @@ function ale_trim_excerpt($length) {
 
 function get_breadcrumbs() {
 
-    $text['home']     = __('Home','aletheme');
+    $text['home']     = __('Главная','aletheme');
     $text['category'] = __('Archive','aletheme').' "%s"';
     $text['search']   = __('Search results','aletheme').' "%s"';
     $text['tag']      = __('Tag','aletheme').' "%s"';
@@ -1270,7 +1270,7 @@ function get_breadcrumbs() {
     $show_on_home   = 0;
     $show_home_link = 1;
     $show_title     = 1;
-    $delimiter      = '&nbsp; › &nbsp;';
+    $delimiter      = '<span class="breadcrumbs__delimiter">&nbsp;/&nbsp;</span>';
     $before         = '<span class="current">';
     $after          = '</span>';
 

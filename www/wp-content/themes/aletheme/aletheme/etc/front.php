@@ -53,7 +53,7 @@ function ale_enqueue_styles() {
     wp_enqueue_style('aletheme_default_css');
     wp_enqueue_style('aletheme_tablepress_css');
 
-//    if(is_page_template('template-about.php') or is_page_template('template-award.php')){
+//    if(is_page_template('template-products.php') or is_page_template('template-award.php')){
 //        wp_enqueue_style('jquery.jscrollpane');
 //    }
 }

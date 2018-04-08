@@ -1,8 +1,16 @@
 <?php
 /**
- * Template Name: Template About (team)
+ * Template Name: Inner page
  */
 get_header(); ?>
+
+<main class="shadow" role="main">
+    <div class="container">
+
+        <?php get_breadcrumbs(); ?>
+
+
+    <?php /*
     <!-- Content -->
     <div class="about-center-align">
 
@@ -102,5 +110,9 @@ get_header(); ?>
                 <?php endwhile; endif; ?>
             </div>
         </div>
-    </div>
+    </div>*/?>
+
+    </div><!-- #primary -->
+</main>
+
 <?php get_footer(); ?>

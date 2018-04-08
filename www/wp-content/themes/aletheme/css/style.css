@@ -3639,6 +3639,10 @@ footer .btn-order:after {
     line-height: 1.692;
     letter-spacing: .01em
 }
+.breadcrumbs__delimiter{
+    font-size: 13px;
+    color: #303030;
+}
 
 @media (min-width:992px) {
     .breadcrumbs a,
@@ -5150,4 +5154,15 @@ footer .ya-phone i {
 
 .product-card-block .product-card-price {
     font-size: 25px
+}
+
+
+.noafter{
+    margin: 10px auto 18px!important;
+}
+.noafter:after{
+    background: none!important;
+}
+.form__label{
+    font-size: 14px;
 }
