@@ -3420,14 +3420,20 @@ footer .top-row {
 
 #data,
 #callback,
-#utochnenie {
+#utochnenie,
+#customerservice {
     width: 265px;
     padding: 30px 15px 10px
+}
+#customerservice {
+    width: 295px;
 }
 
 #data.fancybox-content,
 #callback.fancybox-content,
-#utochnenie.fancybox-content {
+#utochnenie.fancybox-content,
+#customerservice.fancybox-content
+{
     height: auto;
 }
 

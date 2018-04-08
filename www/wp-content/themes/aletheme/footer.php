@@ -148,6 +148,13 @@
     <?php echo do_shortcode( '[contact-form-7 id="35" title="Заказать звонок"]' );  ?>
 </div>
 
+<div style="display: none;" id="customerservice" class="shadow">
+    <?php echo do_shortcode( '[contact-form-7 id="101" title="Отдел клиентского сервиса"]' );  ?>
+</div>
+
+
+
+
 <!-- SCRIPT -->
 <?php wp_footer(); ?>
 

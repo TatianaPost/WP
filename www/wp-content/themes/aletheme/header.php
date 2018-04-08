@@ -45,7 +45,7 @@
                 <div class="options">
                     <a data-fancybox data-src="#callback" href="javascript:;" class="call zakaz">Заказать звонок</a>
                     <a href="" class="download">Скачать прайс-лист</a><br>
-                    <a href="">Отдел клиентского сервиса</a>
+                    <a data-fancybox data-src="#customerservice" href="javascript:;">Отдел клиентского сервиса</a>
                 </div>
                 <div class="contact">
                     <?php if(ale_get_option('tel1')){ ?>
