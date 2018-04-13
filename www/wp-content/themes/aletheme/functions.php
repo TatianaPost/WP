@@ -25,3 +25,11 @@ if ( is_readable($locale_file) )
  * If you want to add custom functions you should do manual
  * updates only.
  ****************************************************************/
+class Child_Wrap extends Walker_Nav_Menu
+{
+    function end_el(&$output, $item, $depth)
+    {
+        $indent = str_repeat("\t", $depth);
+        $output .= "$indent</div></li>\n";
+    }
+}

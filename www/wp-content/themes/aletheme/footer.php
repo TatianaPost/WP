@@ -21,29 +21,50 @@
             <div class="flexbox">
 
                 <hr>
-                <?php if( has_nav_menu('footer_menu_bottom')){
-                    echo '222';
-                    wp_nav_menu([
-                        'theme_location' => 'footer_menu_bottom',
-                        'menu' => 'Bottom footer menu',
-                        'menu_class' => 'nav-justified',
-                        'menu_id' => 'topMenu',
-                        'container' => 'nav',
-                        'container_class' => 'menu-glavnoe-container',
-                        'walker' => '',
-                        'depth' => '-1',
-                    ]);
-                }
-                ?>
-                <?php the_widget( 'WP_Nav_Menu_Widget', 'dropdown=0&hierarchical=1' ); ?>
-                <hr>
+                <?php
+                    if( has_nav_menu('footer_menu_bottom')){
+                        wp_nav_menu([
+                            'theme_location' => 'footer_menu_bottom',
+                            'menu' => 'Bottom footer menu',
+                            'menu_class' => '',
+                            'menu_id' => 'menu-uslugi-2',
+                            'container' => 'nav',
+                            'container_class' => 'footer-menu-item',
+                            'walker' => new Child_Wrap,
+                            'depth' => '2',
+                        ]);
+                    }
 
+                // И там, где нужно выводим меню так:
+//                function magomra_nav_menu( $menu_id )
+//                {
+//                    // main navigation menu
+//                    $args = array(
+//                        'theme_location' => 'navigation_menu_primary',
+//                        'container' => 'div',
+//                        'container_id' => 'top-navigation-primary',
+//                        'conatiner_class' => 'top-navigation',
+//                        'menu_class' => 'menu main-menu menu-depth-0 menu-even',
+//                        'echo' => true,
+//                        'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+//                        'depth' => 10,
+//                        'walker' => new magomra_walker_nav_menu
+//                    );
+//
+//                    // print menu
+//                    wp_nav_menu($args);
+//                }
+                ?>
+                <hr>
+                <?php /**/?>
                 <nav class="footer-menu-item">
                     <ul id="menu-uslugi-2" class="">
-                        <li class="menu-item menu-item-type-post_type menu-item-object-materiali current-menu-item menu-item-has-children menu-item-69">
-                            <a href="http://granitstroi.ru/shheben/" class="menu-image-title-below menu-image-not-hovered">
-                                <span class="menu-image-title">Сыпучие нерудные материалы</span>
+                        <li class="menu-item current-menu-item menu-item-has-children">
+
+                            <a href="" class="menu-image-title-below menu-image-not-hovered">
+                                <span class="menu-image-title">Сыпучие нерудные материалы!!!</span>
                             </a>
+
                             <ul class="sub-menu">
                                 <li class="menu-item menu-item-type-post_type menu-item-object-materiali menu-item-has-children menu-item-117">
                                     <a href="http://granitstroi.ru/shheben/shheben-granitnyj/" class="menu-image-title-below menu-image-not-hovered">
@@ -77,6 +98,22 @@
                                 </li>
                             </ul>
                         </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                         <li class="menu-item menu-item-type-post_type menu-item-object-materiali menu-item-has-children menu-item-48">
                             <a href="http://granitstroi.ru/pesok/" class="menu-image-title-below menu-image-not-hovered">
                                 <span class="menu-image-title">Плодородные почвы</span>
@@ -118,6 +155,7 @@
                         </li>
                     </ul>
                 </nav>
+
                 <div class="footer-menu-address">
                     <div class="title">Контакты</div>
                     <div>

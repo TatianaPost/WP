@@ -25,7 +25,7 @@
                 ]);
             }?>
 
-            <a href="#data" class="btn-default btn-order">Заказать</a>
+            <a data-fancybox data-src="#callback" href="javascript:;" class="btn-default btn-order">Заказать звонок</a>
         </div>
     </div>
     <div class="logo-row">
