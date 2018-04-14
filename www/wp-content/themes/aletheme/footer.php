@@ -43,7 +43,7 @@
                         <?php } ?>
                         <br>
                         <?php if(ale_get_option('tel1')){ ?>
-                            <span class="ya-phone"><a class="tel" href="tel:89050000000"><span><?php echo ale_get_option('tel1') ?></span></a></span><br>
+                            <span class="ya-phone"><a class="tel" href="tel:<?php echo ale_href_tel(ale_get_option('tel1')); ?>"><span><?php echo ale_get_option('tel1') ?></span></a></span><br>
                         <?php } ?>
 
                         <?php if(ale_get_option('email')){ ?>

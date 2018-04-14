@@ -408,266 +408,266 @@ function aletheme_metaboxes($meta_boxes) {
         )
     );
 
-    $meta_boxes[] = array(
-        'id'         => 'press_page_metabox',
-        'title'      => 'Press Page Options',
-        'pages'      => array( 'page', ), // Post type
-        'context'    => 'normal',
-        'priority'   => 'high',
-        'show_names' => true, // Show field names on the left
-        'show_on'    => array( 'key' => 'page-template', 'value' => array('template-press.php'), ), // Specific post templates to display this metabox
-        'fields' => array(
-            array(
-                'name' => 'Press title #1',
-                'desc' => 'Insert the title',
-                'id'   => $prefix . 'presstit1',
-                'type' => 'text',
-            ),
-            array(
-                'name' => 'Press Thumb #1',
-                'desc' => 'Insert the image (max-height - 280px)',
-                'id'   => $prefix . 'pressthumb1',
-                'type' => 'file',
-            ),
-            array(
-                'name' => 'Press Image #1',
-                'desc' => 'Insert the image or let it empty if you want to use a video.',
-                'id'   => $prefix . 'pressimage1',
-                'type' => 'file',
-            ),
-            array(
-                'name' => 'Press Video link #1',
-                'desc' => 'Insert the video or let it empty if you want to use an image. (Embed link - ex //www.youtube.com/embed/LtulTGxJdDc)',
-                'id'   => $prefix . 'pressvideo1',
-                'type' => 'text',
-            ),
-
-            array(
-                'name' => 'Press title #2',
-                'desc' => 'Insert the title',
-                'id'   => $prefix . 'presstit2',
-                'type' => 'text',
-            ),
-            array(
-                'name' => 'Press Thumb #2',
-                'desc' => 'Insert the image (max-height - 280px)',
-                'id'   => $prefix . 'pressthumb2',
-                'type' => 'file',
-            ),
-            array(
-                'name' => 'Press Image #2',
-                'desc' => 'Insert the image or let it empty if you want to use a video.',
-                'id'   => $prefix . 'pressimage2',
-                'type' => 'file',
-            ),
-            array(
-                'name' => 'Press Video link #2',
-                'desc' => 'Insert the video or let it empty if you want to use an image. (Embed link - ex //www.youtube.com/embed/LtulTGxJdDc)',
-                'id'   => $prefix . 'pressvideo2',
-                'type' => 'text',
-            ),
-
-            array(
-                'name' => 'Press title #3',
-                'desc' => 'Insert the title',
-                'id'   => $prefix . 'presstit3',
-                'type' => 'text',
-            ),
-            array(
-                'name' => 'Press Thumb #3',
-                'desc' => 'Insert the image (max-height - 280px)',
-                'id'   => $prefix . 'pressthumb3',
-                'type' => 'file',
-            ),
-            array(
-                'name' => 'Press Image #3',
-                'desc' => 'Insert the image or let it empty if you want to use a video.',
-                'id'   => $prefix . 'pressimage3',
-                'type' => 'file',
-            ),
-            array(
-                'name' => 'Press Video link #3',
-                'desc' => 'Insert the video or let it empty if you want to use an image. (Embed link - ex //www.youtube.com/embed/LtulTGxJdDc)',
-                'id'   => $prefix . 'pressvideo3',
-                'type' => 'text',
-            ),
-
-            array(
-                'name' => 'Press title #4',
-                'desc' => 'Insert the title',
-                'id'   => $prefix . 'presstit4',
-                'type' => 'text',
-            ),
-            array(
-                'name' => 'Press Thumb #4',
-                'desc' => 'Insert the image (max-height - 280px)',
-                'id'   => $prefix . 'pressthumb4',
-                'type' => 'file',
-            ),
-            array(
-                'name' => 'Press Image #4',
-                'desc' => 'Insert the image or let it empty if you want to use a video.',
-                'id'   => $prefix . 'pressimage4',
-                'type' => 'file',
-            ),
-            array(
-                'name' => 'Press Video link #4',
-                'desc' => 'Insert the video or let it empty if you want to use an image. (Embed link - ex //www.youtube.com/embed/LtulTGxJdDc)',
-                'id'   => $prefix . 'pressvideo4',
-                'type' => 'text',
-            ),
-
-            array(
-                'name' => 'Press title #5',
-                'desc' => 'Insert the title',
-                'id'   => $prefix . 'presstit5',
-                'type' => 'text',
-            ),
-            array(
-                'name' => 'Press Thumb #5',
-                'desc' => 'Insert the image (max-height - 280px)',
-                'id'   => $prefix . 'pressthumb5',
-                'type' => 'file',
-            ),
-            array(
-                'name' => 'Press Image #5',
-                'desc' => 'Insert the image or let it empty if you want to use a video.',
-                'id'   => $prefix . 'pressimage5',
-                'type' => 'file',
-            ),
-            array(
-                'name' => 'Press Video link #5',
-                'desc' => 'Insert the video or let it empty if you want to use an image. (Embed link - ex //www.youtube.com/embed/LtulTGxJdDc)',
-                'id'   => $prefix . 'pressvideo5',
-                'type' => 'text',
-            ),
-
-            array(
-                'name' => 'Press title #6',
-                'desc' => 'Insert the title',
-                'id'   => $prefix . 'presstit6',
-                'type' => 'text',
-            ),
-            array(
-                'name' => 'Press Thumb #6',
-                'desc' => 'Insert the image (max-height - 280px)',
-                'id'   => $prefix . 'pressthumb6',
-                'type' => 'file',
-            ),
-            array(
-                'name' => 'Press Image #6',
-                'desc' => 'Insert the image or let it empty if you want to use a video.',
-                'id'   => $prefix . 'pressimage6',
-                'type' => 'file',
-            ),
-            array(
-                'name' => 'Press Video link #6',
-                'desc' => 'Insert the video or let it empty if you want to use an image. (Embed link - ex //www.youtube.com/embed/LtulTGxJdDc)',
-                'id'   => $prefix . 'pressvideo6',
-                'type' => 'text',
-            ),
-
-            array(
-                'name' => 'Press title #7',
-                'desc' => 'Insert the title',
-                'id'   => $prefix . 'presstit7',
-                'type' => 'text',
-            ),
-            array(
-                'name' => 'Press Thumb #7',
-                'desc' => 'Insert the image (max-height - 280px)',
-                'id'   => $prefix . 'pressthumb7',
-                'type' => 'file',
-            ),
-            array(
-                'name' => 'Press Image #7',
-                'desc' => 'Insert the image or let it empty if you want to use a video.',
-                'id'   => $prefix . 'pressimage7',
-                'type' => 'file',
-            ),
-            array(
-                'name' => 'Press Video link #7',
-                'desc' => 'Insert the video or let it empty if you want to use an image. (Embed link - ex //www.youtube.com/embed/LtulTGxJdDc)',
-                'id'   => $prefix . 'pressvideo7',
-                'type' => 'text',
-            ),
-
-            array(
-                'name' => 'Press title #8',
-                'desc' => 'Insert the title',
-                'id'   => $prefix . 'presstit8',
-                'type' => 'text',
-            ),
-            array(
-                'name' => 'Press Thumb #8',
-                'desc' => 'Insert the image (max-height - 280px)',
-                'id'   => $prefix . 'pressthumb8',
-                'type' => 'file',
-            ),
-            array(
-                'name' => 'Press Image #8',
-                'desc' => 'Insert the image or let it empty if you want to use a video.',
-                'id'   => $prefix . 'pressimage8',
-                'type' => 'file',
-            ),
-            array(
-                'name' => 'Press Video link #8',
-                'desc' => 'Insert the video or let it empty if you want to use an image. (Embed link - ex //www.youtube.com/embed/LtulTGxJdDc)',
-                'id'   => $prefix . 'pressvideo8',
-                'type' => 'text',
-            ),
-
-            array(
-                'name' => 'Press title #9',
-                'desc' => 'Insert the title',
-                'id'   => $prefix . 'presstit9',
-                'type' => 'text',
-            ),
-            array(
-                'name' => 'Press Thumb #9',
-                'desc' => 'Insert the image (max-height - 280px)',
-                'id'   => $prefix . 'pressthumb9',
-                'type' => 'file',
-            ),
-            array(
-                'name' => 'Press Image #9',
-                'desc' => 'Insert the image or let it empty if you want to use a video.',
-                'id'   => $prefix . 'pressimage9',
-                'type' => 'file',
-            ),
-            array(
-                'name' => 'Press Video link #9',
-                'desc' => 'Insert the video or let it empty if you want to use an image. (Embed link - ex //www.youtube.com/embed/LtulTGxJdDc)',
-                'id'   => $prefix . 'pressvideo9',
-                'type' => 'text',
-            ),
-
-            array(
-                'name' => 'Press title #10',
-                'desc' => 'Insert the title',
-                'id'   => $prefix . 'presstit10',
-                'type' => 'text',
-            ),
-            array(
-                'name' => 'Press Thumb #10',
-                'desc' => 'Insert the image (max-height - 280px)',
-                'id'   => $prefix . 'pressthumb10',
-                'type' => 'file',
-            ),
-            array(
-                'name' => 'Press Image #10',
-                'desc' => 'Insert the image or let it empty if you want to use a video.',
-                'id'   => $prefix . 'pressimage10',
-                'type' => 'file',
-            ),
-            array(
-                'name' => 'Press Video link #10',
-                'desc' => 'Insert the video or let it empty if you want to use an image. (Embed link - ex //www.youtube.com/embed/LtulTGxJdDc)',
-                'id'   => $prefix . 'pressvideo10',
-                'type' => 'text',
-            ),
-        )
-    );
+//    $meta_boxes[] = array(
+//        'id'         => 'press_page_metabox',
+//        'title'      => 'Press Page Options',
+//        'pages'      => array( 'page', ), // Post type
+//        'context'    => 'normal',
+//        'priority'   => 'high',
+//        'show_names' => true, // Show field names on the left
+//        'show_on'    => array( 'key' => 'page-template', 'value' => array('template-price.php'), ), // Specific post templates to display this metabox
+//        'fields' => array(
+//            array(
+//                'name' => 'Press title #1',
+//                'desc' => 'Insert the title',
+//                'id'   => $prefix . 'presstit1',
+//                'type' => 'text',
+//            ),
+//            array(
+//                'name' => 'Press Thumb #1',
+//                'desc' => 'Insert the image (max-height - 280px)',
+//                'id'   => $prefix . 'pressthumb1',
+//                'type' => 'file',
+//            ),
+//            array(
+//                'name' => 'Press Image #1',
+//                'desc' => 'Insert the image or let it empty if you want to use a video.',
+//                'id'   => $prefix . 'pressimage1',
+//                'type' => 'file',
+//            ),
+//            array(
+//                'name' => 'Press Video link #1',
+//                'desc' => 'Insert the video or let it empty if you want to use an image. (Embed link - ex //www.youtube.com/embed/LtulTGxJdDc)',
+//                'id'   => $prefix . 'pressvideo1',
+//                'type' => 'text',
+//            ),
+//
+//            array(
+//                'name' => 'Press title #2',
+//                'desc' => 'Insert the title',
+//                'id'   => $prefix . 'presstit2',
+//                'type' => 'text',
+//            ),
+//            array(
+//                'name' => 'Press Thumb #2',
+//                'desc' => 'Insert the image (max-height - 280px)',
+//                'id'   => $prefix . 'pressthumb2',
+//                'type' => 'file',
+//            ),
+//            array(
+//                'name' => 'Press Image #2',
+//                'desc' => 'Insert the image or let it empty if you want to use a video.',
+//                'id'   => $prefix . 'pressimage2',
+//                'type' => 'file',
+//            ),
+//            array(
+//                'name' => 'Press Video link #2',
+//                'desc' => 'Insert the video or let it empty if you want to use an image. (Embed link - ex //www.youtube.com/embed/LtulTGxJdDc)',
+//                'id'   => $prefix . 'pressvideo2',
+//                'type' => 'text',
+//            ),
+//
+//            array(
+//                'name' => 'Press title #3',
+//                'desc' => 'Insert the title',
+//                'id'   => $prefix . 'presstit3',
+//                'type' => 'text',
+//            ),
+//            array(
+//                'name' => 'Press Thumb #3',
+//                'desc' => 'Insert the image (max-height - 280px)',
+//                'id'   => $prefix . 'pressthumb3',
+//                'type' => 'file',
+//            ),
+//            array(
+//                'name' => 'Press Image #3',
+//                'desc' => 'Insert the image or let it empty if you want to use a video.',
+//                'id'   => $prefix . 'pressimage3',
+//                'type' => 'file',
+//            ),
+//            array(
+//                'name' => 'Press Video link #3',
+//                'desc' => 'Insert the video or let it empty if you want to use an image. (Embed link - ex //www.youtube.com/embed/LtulTGxJdDc)',
+//                'id'   => $prefix . 'pressvideo3',
+//                'type' => 'text',
+//            ),
+//
+//            array(
+//                'name' => 'Press title #4',
+//                'desc' => 'Insert the title',
+//                'id'   => $prefix . 'presstit4',
+//                'type' => 'text',
+//            ),
+//            array(
+//                'name' => 'Press Thumb #4',
+//                'desc' => 'Insert the image (max-height - 280px)',
+//                'id'   => $prefix . 'pressthumb4',
+//                'type' => 'file',
+//            ),
+//            array(
+//                'name' => 'Press Image #4',
+//                'desc' => 'Insert the image or let it empty if you want to use a video.',
+//                'id'   => $prefix . 'pressimage4',
+//                'type' => 'file',
+//            ),
+//            array(
+//                'name' => 'Press Video link #4',
+//                'desc' => 'Insert the video or let it empty if you want to use an image. (Embed link - ex //www.youtube.com/embed/LtulTGxJdDc)',
+//                'id'   => $prefix . 'pressvideo4',
+//                'type' => 'text',
+//            ),
+//
+//            array(
+//                'name' => 'Press title #5',
+//                'desc' => 'Insert the title',
+//                'id'   => $prefix . 'presstit5',
+//                'type' => 'text',
+//            ),
+//            array(
+//                'name' => 'Press Thumb #5',
+//                'desc' => 'Insert the image (max-height - 280px)',
+//                'id'   => $prefix . 'pressthumb5',
+//                'type' => 'file',
+//            ),
+//            array(
+//                'name' => 'Press Image #5',
+//                'desc' => 'Insert the image or let it empty if you want to use a video.',
+//                'id'   => $prefix . 'pressimage5',
+//                'type' => 'file',
+//            ),
+//            array(
+//                'name' => 'Press Video link #5',
+//                'desc' => 'Insert the video or let it empty if you want to use an image. (Embed link - ex //www.youtube.com/embed/LtulTGxJdDc)',
+//                'id'   => $prefix . 'pressvideo5',
+//                'type' => 'text',
+//            ),
+//
+//            array(
+//                'name' => 'Press title #6',
+//                'desc' => 'Insert the title',
+//                'id'   => $prefix . 'presstit6',
+//                'type' => 'text',
+//            ),
+//            array(
+//                'name' => 'Press Thumb #6',
+//                'desc' => 'Insert the image (max-height - 280px)',
+//                'id'   => $prefix . 'pressthumb6',
+//                'type' => 'file',
+//            ),
+//            array(
+//                'name' => 'Press Image #6',
+//                'desc' => 'Insert the image or let it empty if you want to use a video.',
+//                'id'   => $prefix . 'pressimage6',
+//                'type' => 'file',
+//            ),
+//            array(
+//                'name' => 'Press Video link #6',
+//                'desc' => 'Insert the video or let it empty if you want to use an image. (Embed link - ex //www.youtube.com/embed/LtulTGxJdDc)',
+//                'id'   => $prefix . 'pressvideo6',
+//                'type' => 'text',
+//            ),
+//
+//            array(
+//                'name' => 'Press title #7',
+//                'desc' => 'Insert the title',
+//                'id'   => $prefix . 'presstit7',
+//                'type' => 'text',
+//            ),
+//            array(
+//                'name' => 'Press Thumb #7',
+//                'desc' => 'Insert the image (max-height - 280px)',
+//                'id'   => $prefix . 'pressthumb7',
+//                'type' => 'file',
+//            ),
+//            array(
+//                'name' => 'Press Image #7',
+//                'desc' => 'Insert the image or let it empty if you want to use a video.',
+//                'id'   => $prefix . 'pressimage7',
+//                'type' => 'file',
+//            ),
+//            array(
+//                'name' => 'Press Video link #7',
+//                'desc' => 'Insert the video or let it empty if you want to use an image. (Embed link - ex //www.youtube.com/embed/LtulTGxJdDc)',
+//                'id'   => $prefix . 'pressvideo7',
+//                'type' => 'text',
+//            ),
+//
+//            array(
+//                'name' => 'Press title #8',
+//                'desc' => 'Insert the title',
+//                'id'   => $prefix . 'presstit8',
+//                'type' => 'text',
+//            ),
+//            array(
+//                'name' => 'Press Thumb #8',
+//                'desc' => 'Insert the image (max-height - 280px)',
+//                'id'   => $prefix . 'pressthumb8',
+//                'type' => 'file',
+//            ),
+//            array(
+//                'name' => 'Press Image #8',
+//                'desc' => 'Insert the image or let it empty if you want to use a video.',
+//                'id'   => $prefix . 'pressimage8',
+//                'type' => 'file',
+//            ),
+//            array(
+//                'name' => 'Press Video link #8',
+//                'desc' => 'Insert the video or let it empty if you want to use an image. (Embed link - ex //www.youtube.com/embed/LtulTGxJdDc)',
+//                'id'   => $prefix . 'pressvideo8',
+//                'type' => 'text',
+//            ),
+//
+//            array(
+//                'name' => 'Press title #9',
+//                'desc' => 'Insert the title',
+//                'id'   => $prefix . 'presstit9',
+//                'type' => 'text',
+//            ),
+//            array(
+//                'name' => 'Press Thumb #9',
+//                'desc' => 'Insert the image (max-height - 280px)',
+//                'id'   => $prefix . 'pressthumb9',
+//                'type' => 'file',
+//            ),
+//            array(
+//                'name' => 'Press Image #9',
+//                'desc' => 'Insert the image or let it empty if you want to use a video.',
+//                'id'   => $prefix . 'pressimage9',
+//                'type' => 'file',
+//            ),
+//            array(
+//                'name' => 'Press Video link #9',
+//                'desc' => 'Insert the video or let it empty if you want to use an image. (Embed link - ex //www.youtube.com/embed/LtulTGxJdDc)',
+//                'id'   => $prefix . 'pressvideo9',
+//                'type' => 'text',
+//            ),
+//
+//            array(
+//                'name' => 'Press title #10',
+//                'desc' => 'Insert the title',
+//                'id'   => $prefix . 'presstit10',
+//                'type' => 'text',
+//            ),
+//            array(
+//                'name' => 'Press Thumb #10',
+//                'desc' => 'Insert the image (max-height - 280px)',
+//                'id'   => $prefix . 'pressthumb10',
+//                'type' => 'file',
+//            ),
+//            array(
+//                'name' => 'Press Image #10',
+//                'desc' => 'Insert the image or let it empty if you want to use a video.',
+//                'id'   => $prefix . 'pressimage10',
+//                'type' => 'file',
+//            ),
+//            array(
+//                'name' => 'Press Video link #10',
+//                'desc' => 'Insert the video or let it empty if you want to use an image. (Embed link - ex //www.youtube.com/embed/LtulTGxJdDc)',
+//                'id'   => $prefix . 'pressvideo10',
+//                'type' => 'text',
+//            ),
+//        )
+//    );
 
 
     $meta_boxes[] = array(
