@@ -903,6 +903,14 @@ function aletheme_get_images_sizes() {
                 'crop'      => true,
             ),
         ),
+        'certificates' => array(
+            array(
+                'name'      => 'certificate-thumba',
+                'width'     => 135,
+                'height'    => 186,
+                'crop'      => true,
+            ),
+        ),
 
 
     );
@@ -937,7 +945,7 @@ function aletheme_get_post_types() {
             'config' => array(
                 'public' => true,
                 'menu_position' => 20,
-                'menu_icon' => 'dashicons-format-audio',
+                'menu_icon' => 'dashicons-dashboard',
                 'has_archive'   => true,
                 'supports'=> array(
                     'title',
@@ -948,6 +956,21 @@ function aletheme_get_post_types() {
             ),
             'singular' => 'Преимущество',
             'multiple' => 'Преимущества'
+        ),
+        'certificates' => array(
+            'config' => array(
+                'public' => true,
+                'menu_position' => 21,
+                'menu_icon' => 'dashicons-awards',
+                'has_archive'   => true,
+                'supports'=> array(
+                    'title',
+                    'thumbnail'
+                ),
+                'show_in_nav_menus'=> true,
+            ),
+            'singular' => 'Сертификат',
+            'multiple' => 'Сертификаты'
         ),
     );
 }

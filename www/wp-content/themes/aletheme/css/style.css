@@ -5193,3 +5193,15 @@ footer .ya-phone i {
     background: #eee url(../images/loader.gif) center center no-repeat;
     box-shadow: 1px 1px 7px -2px #000;
 }
+
+/* Сертификаты */
+.review-block > a {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px 12px 10px 0;
+    border: 4px #5f656e solid;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/* /Сертификаты */

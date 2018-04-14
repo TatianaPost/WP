@@ -20,7 +20,6 @@
         <div class="container">
             <div class="flexbox">
 
-                <hr>
                 <?php
                     if( has_nav_menu('footer_menu_bottom')){
                         wp_nav_menu([
@@ -30,131 +29,11 @@
                             'menu_id' => 'menu-uslugi-2',
                             'container' => 'nav',
                             'container_class' => 'footer-menu-item',
-                            'walker' => new Child_Wrap,
+                            'walker' => new Aletheme_Nav_Walker,
                             'depth' => '2',
                         ]);
                     }
-
-                // И там, где нужно выводим меню так:
-//                function magomra_nav_menu( $menu_id )
-//                {
-//                    // main navigation menu
-//                    $args = array(
-//                        'theme_location' => 'navigation_menu_primary',
-//                        'container' => 'div',
-//                        'container_id' => 'top-navigation-primary',
-//                        'conatiner_class' => 'top-navigation',
-//                        'menu_class' => 'menu main-menu menu-depth-0 menu-even',
-//                        'echo' => true,
-//                        'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-//                        'depth' => 10,
-//                        'walker' => new magomra_walker_nav_menu
-//                    );
-//
-//                    // print menu
-//                    wp_nav_menu($args);
-//                }
                 ?>
-                <hr>
-                <?php /**/?>
-                <nav class="footer-menu-item">
-                    <ul id="menu-uslugi-2" class="">
-                        <li class="menu-item current-menu-item menu-item-has-children">
-
-                            <a href="" class="menu-image-title-below menu-image-not-hovered">
-                                <span class="menu-image-title">Сыпучие нерудные материалы!!!</span>
-                            </a>
-
-                            <ul class="sub-menu">
-                                <li class="menu-item menu-item-type-post_type menu-item-object-materiali menu-item-has-children menu-item-117">
-                                    <a href="http://granitstroi.ru/shheben/shheben-granitnyj/" class="menu-image-title-below menu-image-not-hovered">
-                                        <span class="menu-image-title">Песок</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-materiali menu-item-has-children menu-item-117">
-                                    <a href="http://granitstroi.ru/shheben/shheben-granitnyj/" class="menu-image-title-below menu-image-not-hovered">
-                                        <span class="menu-image-title">Щебень</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-materiali menu-item-has-children menu-item-117">
-                                    <a href="http://granitstroi.ru/shheben/shheben-granitnyj/" class="menu-image-title-below menu-image-not-hovered">
-                                        <span class="menu-image-title">Гранитный отсев</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-materiali menu-item-has-children menu-item-117">
-                                    <a href="http://granitstroi.ru/shheben/shheben-granitnyj/" class="menu-image-title-below menu-image-not-hovered">
-                                        <span class="menu-image-title">Булыжник</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-materiali menu-item-has-children menu-item-117">
-                                    <a href="http://granitstroi.ru/shheben/shheben-granitnyj/" class="menu-image-title-below menu-image-not-hovered">
-                                        <span class="menu-image-title">Асфальтная крошка</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-materiali menu-item-has-children menu-item-117">
-                                    <a href="http://granitstroi.ru/shheben/shheben-granitnyj/" class="menu-image-title-below menu-image-not-hovered">
-                                        <span class="menu-image-title">ПГС</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        <li class="menu-item menu-item-type-post_type menu-item-object-materiali menu-item-has-children menu-item-48">
-                            <a href="http://granitstroi.ru/pesok/" class="menu-image-title-below menu-image-not-hovered">
-                                <span class="menu-image-title">Плодородные почвы</span>
-                            </a>
-                            <ul class="sub-menu">
-                                <li class="menu-item menu-item-type-post_type menu-item-object-materiali">
-                                    <a href="http://granitstroi.ru/shheben/shheben-granitnyj/" class="menu-image-title-below menu-image-not-hovered">
-                                        <span class="menu-image-title">Земля плодородная</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-materiali">
-                                    <a href="http://granitstroi.ru/shheben/shheben-granitnyj/" class="menu-image-title-below menu-image-not-hovered">
-                                        <span class="menu-image-title">Грунт плодородный</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-materiali">
-                                    <a href="http://granitstroi.ru/shheben/shheben-granitnyj/" class="menu-image-title-below menu-image-not-hovered">
-                                        <span class="menu-image-title">Торфогрунт</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="menu-item menu-item-type-post_type menu-item-object-materiali menu-item-has-children menu-item-76">
-                            <a href="http://granitstroi.ru/pesok/" class="menu-image-title-below menu-image-not-hovered">
-                                <span class="menu-image-title">Услуги</span>
-                            </a>
-                            <ul class="sub-menu">
-                                <li class="menu-item menu-item-type-post_type menu-item-object-materiali">
-                                    <a href="http://granitstroi.ru/shheben/shheben-granitnyj/" class="menu-image-title-below menu-image-not-hovered">
-                                        <span class="menu-image-title">Вывоз мусора</span>
-                                    </a>
-                                </li>
-                                <li class="menu-item menu-item-type-post_type menu-item-object-materiali">
-                                    <a href="http://granitstroi.ru/shheben/shheben-granitnyj/" class="menu-image-title-below menu-image-not-hovered">
-                                        <span class="menu-image-title">Аренда спецтехники</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
 
                 <div class="footer-menu-address">
                     <div class="title">Контакты</div>
