@@ -128,5 +128,40 @@ jQuery(document).ready(function(){
     }
 
 
+    if (jQuery('.price').length > 0)
+    {
+        jQuery('.price').on('click', '.datlink', function (e) {
+            e.preventDefault();
+            jQuery(this).hide();
+            jQuery(this).parent('p').prev().slideDown();
+        });
+
+        jQuery('.price-container h2').on('click', function () {
+            let parent = jQuery(this).parents('.price-container');
+            parent.slideUp();
+            parent.next().find('.datlink').show();
+        });
+
+        jQuery('.price').on('click', '.formopen', function (e) {
+
+            let target = jQuery(this).parents('tr').find('td').first().text();
+            console.log(target)
+            jQuery('input[name=material]').val(target);
+        });
+
+        // очищаем поле 'Материал / Услуга*' в pop-up 'Заказать'
+        jQuery("[data-fancybox]").fancybox({
+            'afterClose': function() {
+                console.log(122222)
+                if (jQuery('input[name=material]').length > 0){
+                    jQuery('input[name=material]').val('');
+                }
+            }
+        });
+
+
+    }
+
+
 });
 

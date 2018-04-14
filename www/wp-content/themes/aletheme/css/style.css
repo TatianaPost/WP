@@ -5204,4 +5204,153 @@ footer .ya-phone i {
     border-radius: 5px;
 }
 
-/* /Сертификаты */
+/* Цены */
+.price {
+    margin-top: 40px;
+}
+.price-container {
+    display: none;
+    position: relative;
+    box-sizing: border-box;
+}
+.datlink-hide {
+    cursor: pointer;
+    position: absolute;
+    background: #e9e2db;
+    width: 20%;
+    float: right;
+    right: 0;
+    padding: 3px;
+    text-align: center;
+    margin-top: 0;
+    margin-right: 8px;
+    color: #514941;
+    border: 1px solid grey;
+}
+.datlink-hide:hover {
+    transition: all .15s ease-in;
+    color: white;
+    background: #bdb2a5;
+    text-decoration: none;
+}
+.readmore {
+    display: inline-block;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-right: 10px;
+    color: #514941;
+}
+.price .heading {
+    margin: 0;
+    padding: 24px 10px;
+    background-color: rgb(239, 235, 228);
+    border: none;
+    clear: both;
+    text-transform: uppercase;
+    color: #514941;
+    font-size: 36px;
+}
+.price footer {
+    margin-bottom: 32px;
+    padding: 17px 10px;
+    background-color: rgb(239, 235, 228);
+    text-align: center;
+}
+.datlink {
+    cursor: pointer;
+    background: #e9e2db;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-top: -7px;
+    color: #514941;
+    border: 1px solid grey;
+    margin-bottom: 2px;
+}
+.price h2 {
+    margin: 0 0 -2px 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: "Roboto";
+    font-weight: normal;
+    letter-spacing: 0.15px;
+    font-size: 22px;
+    line-height: 1.1;
+    color: inherit;
+    text-align: center;
+    cursor: pointer;
+}
+.price section {
+    border-left: rgb(239, 235, 228) 7px solid;
+    border-right: rgb(239, 235, 228) 7px solid;
+    background-color: rgb(239, 235, 228);
+}
+.price table{
+    width: 100%;
+    max-width: 100%;
+    font-size: 20px;
+    margin-bottom: 0;
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+.price table tr {
+    background: #f7f6f4;
+}
+.price table tr:nth-of-type(odd) {
+    background: white !important;
+}
+.price table>tbody>tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+.price table th{
+    font-family: "Roboto";
+    font-weight: normal;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+    color: #8d867f;
+    font-size: 16px !important;
+}
+.price table th, .price table td {
+    border: 0 !important;
+    text-align: center;
+    border-right: 1px solid rgba(187, 170, 159, 0.32) !important;
+    max-width: 250px;
+}
+.price table>tbody>tr>td, .price table>tbody>tr>th, .price table>tfoot>tr>td, .price table>tfoot>tr>th, .price table>thead>tr>td, .price table>thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: middle;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+}
+.price table td:first-child {
+    text-align: left;
+    width: 300px;
+    padding: 8px 20px 8px 8px;
+}
+.price table a.formopen {
+    display: inline-block;
+    height: auto;
+    line-height: 21px;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 3px;
+    border: 0;
+    border-bottom: 3px solid #3f6074;
+    background: #577a90;
+    letter-spacing: 0px;
+    outline: 0;
+    text-transform: none;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Roboto;
+}
+.price table a.formopen:hover {
+    color: #333;
+    background-color: #ffc43f;
+    border-color: #be9842;
+}
+.price table a:after{
+    border: none;
+}
