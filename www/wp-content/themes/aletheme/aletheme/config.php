@@ -442,7 +442,7 @@ function aletheme_metaboxes($meta_boxes) {
 //        'context'    => 'normal',
 //        'priority'   => 'high',
 //        'show_names' => true, // Show field names on the left
-//        'show_on'    => array( 'key' => 'page-template', 'value' => array('template-price.php'), ), // Specific post templates to display this metabox
+//        'show_on'    => array( 'key' => 'page-template', 'value' => array('template-review.php'), ), // Specific post templates to display this metabox
 //        'fields' => array(
 //            array(
 //                'name' => 'Press title #1',

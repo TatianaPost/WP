@@ -5439,3 +5439,43 @@ footer .ya-phone i {
     position: relative;
     vertical-align: baseline;
 }
+
+/* Отзывы  */
+.review{
+    position: relative;
+    overflow: hidden;
+    padding-top: 20px;
+    color: #303030;
+}
+.review__modal{
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px #ddd;
+}
+.review__item{
+    padding: 11px 0;
+    border-top: 1px solid #0D1216;
+}
+.review__item:last-child{
+    /*border-bottom: 1px solid #0D1216;*/
+}
+.review__body{
+    text-align: left;
+    font-size: 14px;
+    font-family: "Roboto";
+    color: #303030;
+}
+.review__footer{
+    margin-top: 12px;
+    text-align: right;
+    font-weight: bolder;
+}
+.review__author{
+    color: #ff6600;
+}
+.review__date{
+    margin-left: 10px;
+}

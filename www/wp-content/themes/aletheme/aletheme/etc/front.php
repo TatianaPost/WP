@@ -144,39 +144,20 @@ function aletheme_comment_default($comment, $args, $depth) {
     }
     ?>
 <<?php echo $tag ?> <?php comment_class(empty( $args['has_children'] ) ? '' : 'parent') ?> id="comment-<?php comment_ID() ?>">
-    <?php if ( 'div' != $args['style'] ) : ?>
-		<div id="div-comment-<?php comment_ID() ?>" class="comment-body">
-	<?php endif; ?>
-    <?php if ($depth > 1) { ?>
-        <div class="comment2">
-            <div class="response"></div>
-    <?php } else { ?>
-        <div class="comment1">
-    <?php } ?>
 
-        <div class="img">
-            <?php if ($args['avatar_size'] != 0) echo get_avatar( $comment, $args['avatar_size'] ); ?>
-        </div>
-        <div class="content">
-            <p class="time"><?php printf( __('%1$s at %2$s','aletheme'), get_comment_date(),  get_comment_time()) ?></p>
-            <p class="name"><?php printf(__('%s','aletheme'), get_comment_author_link()) ?></p>
-            <div class="text">
+        <div class="review__item">
+            <div class="review__body">
                 <?php if ($comment->comment_approved == '0') : ?>
-                    <em class="comment-awaiting-moderation"><?php _e('Your comment is awaiting moderation.','aletheme') ?></em>
+                    <em class="comment-awaiting-moderation"><?php _e('Ваш комментарий ожидает модерации.','aletheme') ?></em>
                     <br />
                 <?php endif; ?>
                 <?php comment_text() ?>
             </div>
-            <?php if($depth == 1){ ?><a class="respond"><span class="icon"></span><?php comment_reply_link(array_merge( $args, array('add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?></a><?php } ?>
+            <div class="review__footer">
+                <span class="review__author"><?php printf(__('%s','aletheme'), get_comment_author_link()) ?></span>
+                <span class="review__date"><?php printf( __('%1$s','aletheme'), get_comment_date(),  get_comment_time()) ?></span>
+            </div>
         </div>
-        <?php if ($depth > 1) { ?>
-            <div class="line-small"></div>
-        <?php } else { ?>
-            <div class="line"></div>
-        <?php } ?>
-
-        <div class="cf"></div>
-    </div>
     <?php if ( 'div' != $args['style'] ) : ?>
 		</div>
 		<?php endif; ?>

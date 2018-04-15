@@ -1,7 +1,11 @@
 <?php
 /**
- * Template Name: Price
+ * Template Name: Review
  */
+// send contact
+if (isset($_POST['contact'])) {
+    $error = ale_send_contact($_POST['contact']);
+}
 get_header(); ?>
 
     <main class="shadow" role="main">
@@ -14,6 +18,9 @@ get_header(); ?>
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <?php the_content(); ?>
             <?php endwhile; endif; ?>
+
+            <!--   Форма добавления отзыва и вывода списка отзывов  -->
+            <?php comments_template( '/comments.php' ); ?>
 
         </div><!-- #primary -->
     </main>

@@ -11,6 +11,82 @@
         return;
     ?>
 <?php elseif (ale_get_option('comments_style') == 'wp') : ?>
+
+
+<?php /* Форма добавления комментария  */?>
+<div class="review__modal">
+    <?php
+    // Делаем порядок вывода полей в comment_form()
+    add_filter('comment_form_fields', 'kama_reorder_comment_fields' );
+    function kama_reorder_comment_fields( $fields ){
+        // die(print_r( $fields )); // посмотрим какие поля есть
+
+        $new_fields = array(); // сюда соберем поля в новом порядке
+
+        $myorder = array('author','email','url','comment'); // нужный порядок
+
+        foreach( $myorder as $key ){
+            $new_fields[ $key ] = $fields[ $key ];
+            unset( $fields[ $key ] );
+        }
+
+        // если остались еще какие-то поля добавим их в конец
+        if( $fields )
+            foreach( $fields as $key => $val )
+                $new_fields[ $key ] = $val;
+
+        return $new_fields;
+    }
+
+    $comments_args = array(
+        'fields' => array(
+            'author' =>
+                '<label class="form__label" for="author">' . __( 'Ваше имя (обязательно):' ) . '<br>'.
+                '<input id="author" name="author" class="form-control" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" ' . $aria_req . ' /></label>',
+
+            'email'  =>
+                '<label class="form__label" for="email">' . __( 'Ваш e-mail или контактный телефон:' ) . '<br>'.
+                '<input id="email" name="email" class="form-control" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" ' . $aria_req . ' /></label>',
+        ),
+        'class_submit' => 'btn-submit',
+        'label_submit' => 'Опубликовать отзыв',
+        'comment_field' => '<label class="form__label" for="comment">' . _x( 'Отзыв:', 'noun' ) . '<br>
+                            <textarea id="comment" name="comment" class="form-textarea form-control" aria-required="true"></textarea></label>',
+        'comment_notes_before' => ''
+    );
+
+    comment_form($comments_args); ?>
+</div>
+<?php /* /Форма добавления комментария  */?>
+
+
+<?php if (comments_open()) : ?>
+    <?php if (have_comments()) : ?>
+
+        <div class="review">
+            <?php
+            wp_list_comments(
+                array(
+                    'callback' => 'aletheme_comment_default',
+                    'style' => 'div',
+                    'max_depth' => 2,
+                    'avatar_size' => 52,
+                )
+            );
+            ?>
+        </div>
+
+        <?php if (get_comment_pages_count() > 1 && get_option('page_comments')) : // are there comments to navigate through ?>
+            <nav class="comments-nav" class="pager">
+                <div class="previous"><?php previous_comments_link(__('&larr; Older comments', 'aletheme')); ?></div>
+                <div class="next"><?php next_comments_link(__('Newer comments &rarr;', 'aletheme')); ?></div>
+            </nav>
+        <?php endif; // check for comment navigation ?>
+
+    <?php endif; ?>
+<?php endif; ?>
+
+<?php /*
     <!-- Comments -->
     <div class="blog-comments">
         <a name="respond"></a>
@@ -73,6 +149,11 @@
             <?php endif; ?>
         </div>
     </div>
+
+
+
+
+    <?php /*
 <?php elseif(ale_get_option('comments_style') == 'fb') : ?>
     <section class="facebook-comments">
         <div id="fb-comments<?php the_ID()?>" class="fb-comments" data-href="<?php the_permalink()?>" data-num-posts="5"></div>
@@ -106,5 +187,6 @@
         <div class="respondbox">
             <?php comment_form(); ?>
         </div>
-    </section>
+    </section>*/?>
+
 <?php endif; ?>
