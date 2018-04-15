@@ -2905,7 +2905,7 @@ h2 {
     background: url(img/xgrader.png.pagespeed.ic.1q1ptMjIEg.webp) left bottom no-repeat, url(img/xarrow.png.pagespeed.ic.7rD7GdOO51.webp) left 44% top 40px no-repeat;
     text-align: left;
     padding-left: 51.5%;
-    padding-bottom: 40px
+    padding-bottom: 80px
 }
 
 .about-text p {
@@ -5353,4 +5353,89 @@ footer .ya-phone i {
 }
 .price table a:after{
     border: none;
+}
+
+
+/*  Акции  */
+.shares {
+    display: block;
+    margin-top: -9px;
+    margin-bottom: -9px;
+}
+.shares .share {
+    display: block;
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+.shares .share .wrapper {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e8e8e8;
+    height: 150px;
+    transition-property: box-shadow;
+    transition: 0.2s;
+}
+.shares .share .image {
+    display: block;
+    position: relative;
+    float: left;
+    width: 230px;
+    height: 150px;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 0px;
+}
+.uni-aligner-vertical {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    width: 0px;
+    overflow: hidden;
+}
+.shares .share .image img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+.shares .share .information {
+    position: relative;
+    display: block;
+    margin-left: 257px;
+    padding-right: 45px;
+}
+.uni-indents-vertical.indent-15 {
+    padding-top: 15px;
+}
+.shares .share .information .hide-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 88px;
+}
+.shares .share .information .caption {
+    font-size: 18px;
+    line-height: 22px;
+    height: 22px;
+    overflow: hidden;
+    display: block;
+    padding-right: 80px;
+    text-decoration: none;
+    color: #f51315;
+}
+.shares .share .information .description {
+    color: #3c3c3c;
+    height: 51px;
+    line-height: 17px;
+    overflow: hidden;
+}
+.shares .share sup {
+    top: -0.5em;
+}
+.shares .share sub, .shares .share sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
 }
