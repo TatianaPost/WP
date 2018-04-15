@@ -190,105 +190,132 @@ function aletheme_get_options() {
 //                        'std' => array('size' => '12px','face' => 'Playfair+Display','style' => 'normal','color' => '#898989'),
 //                        'type' => 'typography');
 
-	$options[] = array( "name" => "Social",
-						"type" => "heading");
-
-    $options[] = array( "name" => "Twitter",
-                        "desc" => "Your twitter profile URL.",
-                        "id" => "ale_twi",
-                        "std" => "",
-                        "type" => "text");
-	$options[] = array( "name" => "Facebook",
-						"desc" => "Your facebook profile URL.",
-						"id" => "ale_fb",
-						"std" => "",
-						"type" => "text");
-    $options[] = array( "name" => "Google+",
-                        "desc" => "Your google+ profile URL.",
-                        "id" => "ale_gog",
-                        "std" => "",
-                        "type" => "text");
-    $options[] = array( "name" => "Pinterest",
-                        "desc" => "Your pinteres profile URL.",
-                        "id" => "ale_pint",
-                        "std" => "",
-                        "type" => "text");
-    $options[] = array( "name" => "Flickr",
-                        "desc" => "Your flickr profile URL.",
-                        "id" => "ale_flickr",
-                        "std" => "",
-                        "type" => "text");
-    $options[] = array( "name" => "Linkedin",
-                        "desc" => "Your linked profile URL.",
-                        "id" => "ale_linked",
-                        "std" => "",
-                        "type" => "text");
-    $options[] = array( "name" => "Instagram",
-                        "desc" => "Your instagram profile URL.",
-                        "id" => "ale_insta",
-                        "std" => "",
-                        "type" => "text");
-    $options[] = array( "name" => "Show RSS",
-                        "desc" => "Check if you want to show the RSS icon on your site",
-                        "id" => "ale_rssicon",
-                        "std" => "1",
-                        "type" => "checkbox");
-
-	
-	$options[] = array( "name" => "Facebook Application ID",
-						"desc" => "If you have Application ID you can connect the blog to your Facebook Profile and monitor statistics there.",
-						"id" => "ale_fb_id",
-						"std" => "",
-						"type" => "text");
-	
-	$options[] = array( "name" => "Enable Open Graph",
-						"desc" => "The <a href=\"http://www.ogp.me/\">Open Graph</a> protocol enables any web page to become a rich object in a social graph.",
-						"id" => "ale_og_enabled",
-						"std" => "",
-						"type" => "checkbox");
 
 
-	
-	$options[] = array( "name" => "Advanced Settings",
-						"type" => "heading");
+    //  На главной странице
+    $options[] = array( "name" => "О компании",
+                "type" => "heading");
 
-	
-	$options[] = array( "name" => "Google Analytics",
-						"desc" => "Please insert your Google Analytics code here. Example: <strong>UA-22231623-1</strong>",
-						"id" => "ale_ga",
-						"std" => "",
-						"type" => "text");
-	
-	$options[] = array( "name" => "Footer Code",
-						"desc" => "If you have anything else to add in the footer - please add it here.",
-						"id" => "ale_footer_info",
-						"std" => "",
-						"type" => "textarea");
+    $options[] = array( "name" => "Заголовок блока 'О компании'",
+                "desc" => "На главной странице",
+                "id" => "ale_about_header",
+                "std" => "",
+                "type" => "text");
 
-    $options[] = array( "name" => "Custom CSS Styles",
-                        "desc" => "You can add here your styles. ex. .boxclass { padding:10px; }",
-                        "id" => "ale_customcsscode",
-                        "std" => "",
-                        "type" => "textarea");
+    $options[] = array( "name" => "Внимение блока 'О компании'",
+                "desc" => "На главной странице",
+                "id" => "ale_about_attention",
+                "std" => "",
+                "type" => "editor");
 
-    $options[] = array( "name" => "Footer menu title",
-                        "desc" => "Insert the footer menu title",
-                        "id" => "ale_footermenutitle",
-                        "std" => "Select a category",
-                        "type" => "text");
+    $options[] = array( "name" => "Текст блока 'О компании'",
+                "desc" => "На главной странице",
+                "id" => "ale_about_body",
+                "std" => "",
+                "type" => "editor");
+
+    //  /На главной странице
 
 
-    $options[] = array( "name" => "My options",
-                        "type" => "heading");
-
-    $options[] = [
-        'name' => 'Call to action',
-        'desc' => 'Call to action for taxi',
-        'id' => 'ale_calltoaction',
-        'std' => 'Call to action',
-        'type' => 'text'
-
-    ];
+//	$options[] = array( "name" => "Social",
+//						"type" => "heading");
+//
+//    $options[] = array( "name" => "Twitter",
+//                        "desc" => "Your twitter profile URL.",
+//                        "id" => "ale_twi",
+//                        "std" => "",
+//                        "type" => "text");
+//	$options[] = array( "name" => "Facebook",
+//						"desc" => "Your facebook profile URL.",
+//						"id" => "ale_fb",
+//						"std" => "",
+//						"type" => "text");
+//    $options[] = array( "name" => "Google+",
+//                        "desc" => "Your google+ profile URL.",
+//                        "id" => "ale_gog",
+//                        "std" => "",
+//                        "type" => "text");
+//    $options[] = array( "name" => "Pinterest",
+//                        "desc" => "Your pinteres profile URL.",
+//                        "id" => "ale_pint",
+//                        "std" => "",
+//                        "type" => "text");
+//    $options[] = array( "name" => "Flickr",
+//                        "desc" => "Your flickr profile URL.",
+//                        "id" => "ale_flickr",
+//                        "std" => "",
+//                        "type" => "text");
+//    $options[] = array( "name" => "Linkedin",
+//                        "desc" => "Your linked profile URL.",
+//                        "id" => "ale_linked",
+//                        "std" => "",
+//                        "type" => "text");
+//    $options[] = array( "name" => "Instagram",
+//                        "desc" => "Your instagram profile URL.",
+//                        "id" => "ale_insta",
+//                        "std" => "",
+//                        "type" => "text");
+//    $options[] = array( "name" => "Show RSS",
+//                        "desc" => "Check if you want to show the RSS icon on your site",
+//                        "id" => "ale_rssicon",
+//                        "std" => "1",
+//                        "type" => "checkbox");
+//
+//
+//	$options[] = array( "name" => "Facebook Application ID",
+//						"desc" => "If you have Application ID you can connect the blog to your Facebook Profile and monitor statistics there.",
+//						"id" => "ale_fb_id",
+//						"std" => "",
+//						"type" => "text");
+//
+//	$options[] = array( "name" => "Enable Open Graph",
+//						"desc" => "The <a href=\"http://www.ogp.me/\">Open Graph</a> protocol enables any web page to become a rich object in a social graph.",
+//						"id" => "ale_og_enabled",
+//						"std" => "",
+//						"type" => "checkbox");
+//
+//
+//
+//	$options[] = array( "name" => "Advanced Settings",
+//						"type" => "heading");
+//
+//
+//	$options[] = array( "name" => "Google Analytics",
+//						"desc" => "Please insert your Google Analytics code here. Example: <strong>UA-22231623-1</strong>",
+//						"id" => "ale_ga",
+//						"std" => "",
+//						"type" => "text");
+//
+//	$options[] = array( "name" => "Footer Code",
+//						"desc" => "If you have anything else to add in the footer - please add it here.",
+//						"id" => "ale_footer_info",
+//						"std" => "",
+//						"type" => "textarea");
+//
+//    $options[] = array( "name" => "Custom CSS Styles",
+//                        "desc" => "You can add here your styles. ex. .boxclass { padding:10px; }",
+//                        "id" => "ale_customcsscode",
+//                        "std" => "",
+//                        "type" => "textarea");
+//
+//    $options[] = array( "name" => "Footer menu title",
+//                        "desc" => "Insert the footer menu title",
+//                        "id" => "ale_footermenutitle",
+//                        "std" => "Select a category",
+//                        "type" => "text");
+//
+//
+//    $options[] = array( "name" => "My options",
+//                        "type" => "heading");
+//
+//    $options[] = [
+//        'name' => 'Call to action',
+//        'desc' => 'Call to action for taxi',
+//        'id' => 'ale_calltoaction',
+//        'std' => 'Call to action',
+//        'type' => 'text'
+//
+//    ];
 
 	return $options;
 }

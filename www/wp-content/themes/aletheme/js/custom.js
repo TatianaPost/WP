@@ -97,7 +97,7 @@ jQuery(document).ready(function(){
     jQuery('input[type=tel]').inputmask("+7 (999) 999-99-99");  //static mask
 
 
-
+    // Контакты страница
     if (jQuery('#map_contact').length > 0){
         ymaps.ready(function () {
             var map = new ymaps.Map("map_contact", {
@@ -113,6 +113,40 @@ jQuery(document).ready(function(){
                 [59.942467, 30.421882], {
                     hintContent: 'Компания «АВС»',
                     balloonContent: "Компания «АВС». г. Санкт-Петербург, ул. Якорная, БЦ «Престиж», оф. 20."
+                },
+                {
+                    // iconLayout: 'default#image',
+                    // iconImageHref: 'http://clicke.ru/image/catalog/placeholder.png',
+                    // iconImageSize: [40, 56],
+                    // iconImageOffset: [-20, -50]
+                }
+            );
+
+
+            map.geoObjects.add(secondMark);
+        });
+    }
+
+    // Главная страница
+    if (jQuery('#map-field').length > 0){
+        ymaps.ready(function () {
+            var map = new ymaps.Map("map-field", {
+                    center: [59.942467, 30.421882],
+                    zoom: 10,
+                    type: "yandex#map",
+                    controls: []
+                }
+            );
+
+            map.behaviors.disable('scrollZoom'); // отключаем zoom
+
+            map.controls.add(
+                new ymaps.control.ZoomControl()
+            );
+            var secondMark = new ymaps.Placemark(
+                [59.942467, 30.421882], {
+                    hintContent: 'РљРѕРјРїР°РЅРёСЏ В«РђР’РЎВ»',
+                    balloonContent: "РљРѕРјРїР°РЅРёСЏ В«РђР’РЎВ». Рі. РЎР°РЅРєС‚-РџРµС‚РµСЂР±СѓСЂРі, СѓР». РЇРєРѕСЂРЅР°СЏ, Р‘Р¦ В«РџСЂРµСЃС‚РёР¶В», РѕС„. 20."
                 },
                 {
                     // iconLayout: 'default#image',
@@ -143,7 +177,6 @@ jQuery(document).ready(function(){
         });
 
         jQuery('.price').on('click', '.formopen', function (e) {
-
             let target = jQuery(this).parents('tr').find('td').first().text();
             console.log(target)
             jQuery('input[name=material]').val(target);
@@ -152,7 +185,7 @@ jQuery(document).ready(function(){
         // очищаем поле 'Материал / Услуга*' в pop-up 'Заказать'
         jQuery("[data-fancybox]").fancybox({
             'afterClose': function() {
-                console.log(122222)
+                // console.log(122222)
                 if (jQuery('input[name=material]').length > 0){
                     jQuery('input[name=material]').val('');
                 }

@@ -103,7 +103,7 @@ function ale_enqueue_scripts() {
 	wp_enqueue_script( 'aletheme_inputmask.extensions' );
 	wp_enqueue_script( 'aletheme_jquery.inputmask' );
 
-	if(is_page_template('template-contact.php')){
+	if(is_page_template('template-contact.php') || is_page_template('page-home.php')){
         wp_enqueue_script('aletheme_ya_map');
     }
 

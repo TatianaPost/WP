@@ -1,4 +1,28 @@
-<?php get_header(); ?>
+<?php
+/*
+  * Template name: Home
+  * это базовый шаблон
+  * */
+get_header();?>
+
+<main class="shadow" role="main">
+    <div class="container">
+
+        <?php get_breadcrumbs(); ?>
+
+        <h1><?php the_title(); ?></h1>
+
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <?php the_content(); ?>
+        <?php endwhile; endif; ?>
+
+    </div><!-- #primary -->
+</main>
+
+<?php get_footer();?>
+
+<?php /*
+get_header(); ?>
 
 <h1>It's Index Page</h1>
 <br><br>
@@ -141,3 +165,4 @@
 
     </div>
 <?php get_footer(); ?>
+*/?>

@@ -4,9 +4,32 @@
   * */
 get_header();?>
 
+
+<?php if(ale_get_option('about_header')){ ?>
+    <section class="about">
+        <div class="container">
+            <h1><?php echo ale_get_option('about_header') ?></h1>
+            <div class="about-text">
+
+                <?php if(ale_get_option('about_attention')){ ?>
+                    <div class="attention">
+                        <p><?php echo ale_get_option('about_attention') ?></p>
+                    </div>
+                <?php }?>
+
+                <?php if(ale_get_option('about_body')){ ?>
+                    <p><?php echo ale_get_option('about_body') ?></p>
+                <?php }?>
+            </div>
+        </div>
+    </section>
+<?php }?>
+
+
 <main class="shadow" role="main">
     <div class="container">
 
+        <?php /*
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <div class="h2" ><?php the_title(); ?></div>
             <div class="contact-content">
@@ -17,8 +40,16 @@ get_header();?>
         <?php endwhile; else: ?>
             <?php ale_part('notfound')?>
         <?php endif; ?>
+        */?>
 
     </div><!-- #primary -->
+
+
+    <section class="map">
+        <h2>Ближайшие адреса погрузки к вашей стройплощадке</h2>
+        <div id="map-field" class="shadow"></div>
+    </section>
+
 
 </main>
 
