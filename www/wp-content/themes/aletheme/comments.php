@@ -23,7 +23,7 @@
 
         $new_fields = array(); // сюда соберем поля в новом порядке
 
-        $myorder = array('author','email','url','comment'); // нужный порядок
+        $myorder = array('author','email','url','phone','comment'); // нужный порядок
 
         foreach( $myorder as $key ){
             $new_fields[ $key ] = $fields[ $key ];
@@ -44,9 +44,9 @@
                 '<label class="form__label" for="author">' . __( 'Ваше имя (обязательно):' ) . '<br>'.
                 '<input id="author" name="author" class="form-control" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" ' . $aria_req . ' /></label>',
 
-            'email'  =>
+            'phone'  =>
                 '<label class="form__label" for="email">' . __( 'Ваш e-mail или контактный телефон:' ) . '<br>'.
-                '<input id="email" name="email" class="form-control" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" ' . $aria_req . ' /></label>',
+                '<input id="phone" name="phone" class="form-control" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" ' . $aria_req . ' /></label>',
         ),
         'class_submit' => 'btn-submit',
         'label_submit' => 'Опубликовать отзыв',

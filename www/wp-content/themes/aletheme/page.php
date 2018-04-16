@@ -30,7 +30,7 @@ get_header();?>
                         <div class="item-content clearfix">
                             <div class="item-title">
 
-                                <span class="item_data">Растительный грунт (Почвогрунт) </span>
+                                <span class="item_data">Растительный грунт (Почвогрунт)</span>
 
                                 <span class="label label-success" style="line-height: 25px;">В наличии</span>
 
