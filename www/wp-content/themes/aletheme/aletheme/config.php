@@ -398,42 +398,42 @@ function aletheme_metaboxes($meta_boxes) {
 //    );
 
 
-    $meta_boxes[] = array(
-        'id'         => 'home_page_metabox',
-        'title'      => 'Home Meta Options',
-        'pages'      => array( 'page', ), // Post type
-        'context'    => 'normal',
-        'priority'   => 'high',
-        'show_names' => true, // Show field names on the left
-        'show_on'    => array( 'key' => 'page-template', 'value' => array('page-home.php'), ), // Specific post templates to display this metabox
-
-        'fields' => array(
-            array(
-                'name' => 'First Description',
-                'desc' => 'Insert the text',
-                'id'   => $prefix . 'descr1',
-                'type' => 'textarea',
-            ),
-            array(
-                'name' => 'Second Description',
-                'desc' => 'Insert the text',
-                'id'   => $prefix . 'descr2',
-                'type' => 'text',
-            ),
-            array(
-                'name' => 'File Upload',
-                'desc' => 'Insert the text',
-                'id'   => $prefix . 'fileupload',
-                'type' => 'file',
-            ),
-            array(
-                'name' => 'Text Date',
-                'desc' => 'Insert the text',
-                'id'   => $prefix . 'datefield',
-                'type' => 'wysiwyg',
-            ),
-        )
-    );
+//    $meta_boxes[] = array(
+//        'id'         => 'home_page_metabox',
+//        'title'      => 'Home Meta Options',
+//        'pages'      => array( 'page', ), // Post type
+//        'context'    => 'normal',
+//        'priority'   => 'high',
+//        'show_names' => true, // Show field names on the left
+//        'show_on'    => array( 'key' => 'page-template', 'value' => array('page-home.php'), ), // Specific post templates to display this metabox
+//
+//        'fields' => array(
+//            array(
+//                'name' => 'First Description',
+//                'desc' => 'Insert the text',
+//                'id'   => $prefix . 'descr1',
+//                'type' => 'textarea',
+//            ),
+//            array(
+//                'name' => 'Second Description',
+//                'desc' => 'Insert the text',
+//                'id'   => $prefix . 'descr2',
+//                'type' => 'text',
+//            ),
+//            array(
+//                'name' => 'File Upload',
+//                'desc' => 'Insert the text',
+//                'id'   => $prefix . 'fileupload',
+//                'type' => 'file',
+//            ),
+//            array(
+//                'name' => 'Text Date',
+//                'desc' => 'Insert the text',
+//                'id'   => $prefix . 'datefield',
+//                'type' => 'wysiwyg',
+//            ),
+//        )
+//    );
 
 //    $meta_boxes[] = array(
 //        'id'         => 'press_page_metabox',

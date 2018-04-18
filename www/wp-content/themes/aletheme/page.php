@@ -1,6 +1,6 @@
 <?php
 /*
-  * Template name: Home
+  * Template name: Base
   * это базовый шаблон
   * */
 get_header();?>

@@ -16,6 +16,7 @@
     if(ale_get_option('headerfont')){ echo "<link href='http://fonts.googleapis.com/css?family=".ale_get_option('headerfont').$headerfontex."|".ale_get_option('mainfont').$mainfontex."' rel='stylesheet' type='text/css'>"; }
 
     if(ale_get_option('bodystyle')){ echo "<link href='http://fonts.googleapis.com/css?family='.ale_get_option('headerfont').'>";}
+    echo '<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">';
 ?>
 <style type='text/css'>
     body {

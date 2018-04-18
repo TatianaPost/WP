@@ -17,7 +17,7 @@
 @font-face {
     font-family: Roboto;
     src: url(fonts/RobotoMedium/RobotoMedium.eot);
-    src: url(fonts/RobotoMedium/RobotoMedium.eot?#iefix) format("embedded-opentype"), url(fonts/RobotoMedium/RobotoMedium.woff) format("woff"), url(fonts/RobotoMedium/RobotoMedium.ttf) format("truetype");
+    src: url(fonts/RobotoMedium/RobotoMedium.eot?#iefix) format("embedded-opentype"), url(fonts/RobotoMedium/RobotoMedium.ttf) format("truetype");
     font-weight: 600;
     font-style: normal
 }
@@ -32,8 +32,8 @@
 
 @font-face {
     font-family: OpenSans;
-    src: url(fonts/OpenSansItalic/OpenSansItalic.eot);
-    src: url(fonts/OpenSansItalic/OpenSansItalic.eot?#iefix) format("embedded-opentype"), url(fonts/OpenSansItalic/OpenSansItalic.woff) format("woff"), url(fonts/OpenSansItalic/OpenSansItalic.ttf) format("truetype");
+    src: url(fonts/OpenSansSemiBoldItalic/OpenSansItalic.eot);
+    src: url(fonts/OpenSansSemiBoldItalic/OpenSansItalic.eot?#iefix) format("embedded-opentype"), url(fonts/OpenSansSemiBoldItalic/OpenSansItalic.woff) format("woff"), url(fonts/OpenSansSemiBoldItalic/OpenSans-Italic.ttf) format("truetype");
     font-weight: normal;
     font-style: italic
 }
@@ -41,7 +41,7 @@
 @font-face {
     font-family: OpenSans;
     src: url(fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.eot);
-    src: url(fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.eot?#iefix) format("embedded-opentype"), url(fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.woff) format("woff"), url(fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.ttf) format("truetype");
+    src: url(fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.eot?#iefix) format("embedded-opentype"), url(fonts/OpenSansSemiBoldItalic/OpenSans-SemiBoldItalic.ttf) format("truetype");
     font-weight: 600;
     font-style: italic
 }

@@ -1,6 +1,6 @@
 <?php
 /*
-  * Template name: Home
+  * Template name: Home!
   * */
 get_header();?>
 
@@ -27,29 +27,20 @@ get_header();?>
 
 
 <main class="shadow" role="main">
-    <div class="container">
+    <section class="material">
+        <div class="container">
 
-        <?php /*
-        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-            <div class="h2" ><?php the_title(); ?></div>
-            <div class="contact-content">
-                <?php ale_part('pagehead');?>
-                <?php the_content(); ?>
-                <?php ale_part('pagefooter');?>
-            </div>
-        <?php endwhile; else: ?>
-            <?php ale_part('notfound')?>
-        <?php endif; ?>
-        */?>
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                    <?php the_content(); ?>
+            <?php endwhile; endif; ?>
 
-    </div><!-- #primary -->
-
+        </div><!-- #primary -->
+    </section>
 
     <section class="map">
         <h2>Ближайшие адреса погрузки к вашей стройплощадке</h2>
         <div id="map-field" class="shadow"></div>
     </section>
-
 
 </main>
 
