@@ -185,7 +185,6 @@ jQuery(document).ready(function(){
         // очищаем поле 'Материал / Услуга*' в pop-up 'Заказать'
         jQuery("[data-fancybox]").fancybox({
             'afterClose': function() {
-                // console.log(122222)
                 if (jQuery('input[name=material]').length > 0){
                     jQuery('input[name=material]').val('');
                 }
@@ -195,6 +194,9 @@ jQuery(document).ready(function(){
 
     }
 
-
+    if (jQuery('#topMenu').length > 0)
+    {
+        jQuery('#topMenu').slicknav();
+    }
 });
 

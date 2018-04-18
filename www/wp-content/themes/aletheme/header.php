@@ -74,7 +74,7 @@
                     <li class="menu-item menu-item-type-post_type menu-item-object-materiali current-menu-item menu-item-has-children">
                         <a href="" class="menu-image-title-below menu-image-not-hovered">
                             <img width="168" height="98" src="<?php bloginfo('template_url'); ?>/images/xmat1.jpg.pagespeed.ic.2jYbu8PVFM.webp" class="menu-image menu-image-title-below" />
-                            <span class="menu-image-title">Песок</span>
+                            <span class="menu-image-title">Песок!!</span>
                         </a>
                         <ul class="sub-menu">
                             <li class="menu-item menu-item-type-post_type menu-item-object-materiali menu-item-has-children">
