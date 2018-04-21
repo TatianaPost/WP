@@ -3428,6 +3428,9 @@ footer .top-row {
 #customerservice {
     width: 295px;
 }
+#data{
+    width: 290px;
+}
 
 #data.fancybox-content,
 #callback.fancybox-content,
@@ -3645,6 +3648,7 @@ footer .btn-order:after {
 }
 
 .breadcrumbs {
+    margin-left: 5px;
     padding-top: 12px
 }
 
@@ -5605,6 +5609,7 @@ h2+.gallery, h2+.items-list, h2+.well-with-btn, h3+.gallery, h3+.items-list, h3+
     color: #fff;
 }
 .item-title .btn-group-xs>.btn, .item-title .btn-xs {
+    display: inline-block;
     padding: 5px 10px;
     font-size: 14px;
     line-height: 1.33333;
