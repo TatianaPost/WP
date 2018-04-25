@@ -7,7 +7,7 @@
                     'theme_location' => 'main_menu',
                     'menu' => 'Main menu',
                     'menu_class' => 'nav-justified',
-                    'menu_id' => 'topMenu',
+                    'menu_id' => 'menu-glavnoe',
                     'container' => 'nav',
                     'container_class' => 'menu-glavnoe-container',
                     'walker' => '',

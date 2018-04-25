@@ -89,16 +89,19 @@ function ale_enqueue_scripts() {
 
     wp_register_script( 'aletheme_formstyler_min', THEME_URL . '/js/jquery.formstyler.min.js', array( 'jquery' ), ALETHEME_THEME_VERSION, true );
     wp_register_script( 'aletheme_fancybox', THEME_URL . '/js/jquery.fancybox.min.js', array( 'jquery' ), ALETHEME_THEME_VERSION, false );
+    wp_register_script( 'aletheme_slicknav', THEME_URL . '/js/jquery.slicknav.min.js', array( 'jquery' ), ALETHEME_THEME_VERSION, false );
     wp_register_script( 'aletheme_inputmask', THEME_URL . '/js/inputmask.js', array( 'jquery' ), ALETHEME_THEME_VERSION, false );
     wp_register_script( 'aletheme_inputmask.extensions', THEME_URL . '/js/inputmask.extensions.js', array( 'jquery' ), ALETHEME_THEME_VERSION, false );
     wp_register_script( 'aletheme_jquery.inputmask', THEME_URL . '/js/jquery.inputmask.js', array( 'jquery' ), ALETHEME_THEME_VERSION, false );
     wp_register_script( 'aletheme_ya_map', 'https://api-maps.yandex.ru/2.1/?lang=ru_RU', array(), false);
+    wp_register_script( 'aletheme_script', THEME_URL . '/js/script.js', array( 'jquery' ), ALETHEME_THEME_VERSION, true );
     wp_register_script( 'aletheme_custom', THEME_URL . '/js/custom.js', array( 'jquery' ), ALETHEME_THEME_VERSION, true );
 
 	wp_enqueue_script( 'aletheme_jquery' );
 	wp_enqueue_script( 'aletheme_jquery_migrate' );
 	wp_enqueue_script( 'aletheme_formstyler_min' );
 	wp_enqueue_script( 'aletheme_fancybox' );
+	wp_enqueue_script( 'aletheme_slicknav' );
 	wp_enqueue_script( 'aletheme_inputmask' );
 	wp_enqueue_script( 'aletheme_inputmask.extensions' );
 	wp_enqueue_script( 'aletheme_jquery.inputmask' );
@@ -107,6 +110,7 @@ function ale_enqueue_scripts() {
         wp_enqueue_script('aletheme_ya_map');
     }
 
+	wp_enqueue_script( 'aletheme_script' );
 	wp_enqueue_script( 'aletheme_custom' );
 }
 add_action( 'wp_enqueue_scripts', 'ale_enqueue_scripts');

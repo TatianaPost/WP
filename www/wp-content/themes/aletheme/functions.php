@@ -109,3 +109,83 @@ add_action('save_post', 'save_my_new_meta_fields'); // Запускаем фун
 if(is_admin()) {
     wp_enqueue_script('newmeta', get_template_directory_uri().'/js/newmeta.js'); // Новая строчка, пропишите свой путь к файлу!!!
 }
+
+
+/**
+ * __________________________________________________________________________________________________
+ * Проверка поля "Ваше имя" на странице отзывов
+ */
+add_comment_meta($comment_id, $meta_key, $meta_value, $unique = false);
+
+
+add_filter('preprocess_comment', 'require_comment_author');
+function require_comment_author($commentdata) {
+    if ('' == $commentdata['comment_author'])
+        wp_die(
+            '<strong>ОШИБКА</strong>: Введите валидное имя.'
+            . '<p></p>'
+            . '<p><a href="javascript:history.back()">← Назад</a></p>'
+        );
+    return $commentdata;
+}
+
+// Save the comment meta data along with comment
+add_action( 'comment_post', 'save_comment_meta_data' );
+function save_comment_meta_data( $comment_id ) {
+    if ( ( isset( $_POST['phone'] ) ) && ( $_POST['phone'] != '') )
+        $phone = wp_filter_nohtml_kses($_POST['phone']);
+    add_comment_meta( $comment_id, 'phone', $phone );
+}
+get_comment_meta( $comment_id, $meta_key, $single = false );
+
+// Add the comment meta (saved earlier) to the comment text
+// You can also output the comment meta values directly to the comments template
+add_filter( 'comment_text', 'modify_comment');
+function modify_comment( $text ){
+
+    $plugin_url_path = WP_PLUGIN_URL;
+
+    if( $commenttitle = get_comment_meta( get_comment_ID(), 'title', true ) ) {
+        $commenttitle = '<strong>' . esc_attr( $commenttitle ) . '</strong><br/>';
+        $text = $commenttitle . $text;
+    }
+
+    if( $commentrating = get_comment_meta( get_comment_ID(), 'rating', true ) ) {
+        $commentrating = '<p class="comment-rating">  <img src="'. $plugin_url_path .
+            '/ExtendComment/images/'. $commentrating . 'star.gif"/><br/>Rating: <strong>'. $commentrating .' / 5</strong></p>';
+        $text = $text . $commentrating;
+        return $text;
+    } else {
+        return $text;
+    }
+}
+
+// Add an edit option to comment editing screen (в Админке сайта)
+add_action( 'add_meta_boxes_comment', 'extend_comment_add_meta_box' );
+function extend_comment_add_meta_box() {
+    add_meta_box( 'title', __( 'Comment Metadata - Extend Comment' ), 'extend_comment_meta_box', 'comment', 'normal', 'high' );
+}
+
+function extend_comment_meta_box ( $comment ) {
+    $phone = get_comment_meta( $comment->comment_ID, 'phone', true );
+    wp_nonce_field( 'extend_comment_update', 'extend_comment_update', false );
+    ?>
+    <p>
+        <label for="phone"><?php _e( 'Ваш e-mail или контактный телефон' ); ?></label>
+        <input type="text" name="phone" value="<?php echo esc_attr( $phone ); ?>" class="widefat" />
+    </p>
+    <?php
+}
+
+// Update comment meta data from comment editing screen (в Админке сайта)
+add_action( 'edit_comment', 'extend_comment_edit_metafields' );
+function extend_comment_edit_metafields( $comment_id ) {
+    if( ! isset( $_POST['extend_comment_update'] ) || ! wp_verify_nonce( $_POST['extend_comment_update'], 'extend_comment_update' ) ) return;
+
+    if ( ( isset( $_POST['phone'] ) ) && ( $_POST['phone'] != '') ) :
+        $phone = wp_filter_nohtml_kses($_POST['phone']);
+        update_comment_meta( $comment_id, 'phone', $phone );
+    else :
+        delete_comment_meta( $comment_id, 'phone');
+    endif;
+}

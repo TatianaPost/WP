@@ -185,16 +185,36 @@ jQuery(document).ready(function(){
         // очищаем поле 'Материал / Услуга*' в pop-up 'Заказать'
         jQuery("[data-fancybox]").fancybox({
             'afterClose': function() {
-                // console.log(122222)
                 if (jQuery('input[name=material]').length > 0){
                     jQuery('input[name=material]').val('');
                 }
             }
         });
-
-
     }
 
 
+    if (jQuery('.products_list').length > 0)
+    {
+        jQuery('.products_list').on('click', '.order_catalog', function (e) {
+            let target = jQuery(this).parents('.item-title').find('.item_data').text();
+            // console.log(target)
+            jQuery('input[name=material]').val(target);
+        });
+
+        // очищаем поле 'Материал / Услуга*' в pop-up 'Заказать'
+        jQuery("[data-fancybox]").fancybox({
+            'afterClose': function() {
+                if (jQuery('input[name=material]').length > 0){
+                    jQuery('input[name=material]').val('');
+                }
+            }
+        });
+    }
+
+
+    if (jQuery('#topMenu').length > 0)
+    {
+        jQuery('#topMenu').slicknav();
+    }
 });
 
