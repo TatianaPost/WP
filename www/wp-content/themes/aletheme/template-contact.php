@@ -20,7 +20,10 @@ get_header();
             <?php the_content(); ?>
         <?php endwhile; endif; ?>
 
-        <div id="map_contact"></div>
+        <?php if(ale_get_option('map_contact_block')){ ?>
+            <div><?php echo ale_get_option('map_contact_block') ?></div>
+        <?php } ?>
+<!--        <div id="map_contact"></div>-->
 
     </div><!-- #primary -->
 </main>

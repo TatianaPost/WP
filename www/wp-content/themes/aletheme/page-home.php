@@ -37,17 +37,21 @@ get_header();?>
         </div><!-- #primary -->
     </section>
 
+    <?php if(ale_get_option('map_home_block')){ ?>
     <section class="map">
-        <h2>Ближайшие адреса погрузки к вашей стройплощадке</h2>
-        <div id="map-field" class="shadow"></div>
+        <h2>Ближайшие адреса погрузки к вашей стройплощадке</h2><br>
+
+            <div><?php echo ale_get_option('map_home_block') ?></div>
+<!--        <div id="map-field" class="shadow"></div>-->
     </section>
+    <?php } ?>
 
 </main>
 
 <!-- advantages -->
 <section class="advantages">
     <div class="container">
-        <?php if(ale_get_option('order_block_text')){ ?>
+        <?php if(ale_get_option('advantages_block')){ ?>
             <h2><?php echo ale_get_option('advantages_block') ?></h2>
         <?php } ?>
 

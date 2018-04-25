@@ -94,16 +94,29 @@ function aletheme_get_options() {
                         "type" => "editor");
 
     $options[] = array( "name" => "Телефон для блока 'Заказать'",
-                    "desc" => "Блок 'Заказать' внизу страницы",
-                    "id" => "ale_order_block_phone",
-                    "std" => "",
-                    "type" => "text");
+                        "desc" => "Блок 'Заказать' внизу страницы",
+                        "id" => "ale_order_block_phone",
+                        "std" => "",
+                        "type" => "text");
+
+    $options[] = array( "name" => "Карта на Главную страницу",
+                        "desc" => "Разместите скрипт с картой",
+                        "id" => "ale_map_home_block",
+                        "std" => "",
+                        "type" => "editor");
+
+    $options[] = array( "name" => "Карта на страницу 'Контакты'",
+                        "desc" => "Разместите скрипт с картой",
+                        "id" => "ale_map_contact_block",
+                        "std" => "",
+                        "type" => "editor");
+
 
     $options[] = array( "name" => "Заголовок для блока с преимуществами",
-                    "desc" => "Блок 'Наши преимущества' внизу страницы",
-                    "id" => "ale_advantages_block",
-                    "std" => "",
-                    "type" => "editor");
+                        "desc" => "Блок 'Наши преимущества' внизу страницы",
+                        "id" => "ale_advantages_block",
+                        "std" => "Наши преимущества",
+                        "type" => "text");
 
 //    $options[] = array( "name" => "Home Page Slider slug",
 //                        "desc" => "Insert the slider slug. Get the slug on Sliders Section",
