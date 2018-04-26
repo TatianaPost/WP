@@ -710,185 +710,185 @@ function aletheme_metaboxes($meta_boxes) {
 //    );
 
 
-    $meta_boxes[] = array(
-        'id'         => 'aboutslider_page_metabox',
-        'title'      => 'About Page Options',
-        'pages'      => array( 'page', ), // Post type
-        'context'    => 'normal',
-        'priority'   => 'high',
-        'show_names' => true, // Show field names on the left
-        'show_on'    => array( 'key' => 'page-template', 'value' => array('template-products.php'), ), // Specific post templates to display this metabox
-        'fields' => array(
-            array(
-                'name' => 'First member Name',
-                'desc' => 'Insert member name...',
-                'id'   => $prefix . 'memname1',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'Second member Name',
-                'desc' => 'Insert member name...',
-                'id'   => $prefix . 'memname2',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'Third member Name',
-                'desc' => 'Insert member name...',
-                'id'   => $prefix . 'memname3',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'Fourth member Name',
-                'desc' => 'Insert member name...',
-                'id'   => $prefix . 'memname4',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'First member Prof',
-                'desc' => 'Insert member prof...',
-                'id'   => $prefix . 'memprof1',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'Second member Prof',
-                'desc' => 'Insert member prof...',
-                'id'   => $prefix . 'memprof2',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'Third member Prof',
-                'desc' => 'Insert member prof...',
-                'id'   => $prefix . 'memprof3',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'Fourth member Prof',
-                'desc' => 'Insert member prof...',
-                'id'   => $prefix . 'memprof4',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'First member FB link',
-                'desc' => 'Insert member FB link...',
-                'id'   => $prefix . 'memfb1',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'Second member FB link',
-                'desc' => 'Insert member FB link...',
-                'id'   => $prefix . 'memfb2',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'Third member FB link',
-                'desc' => 'Insert member FB link...',
-                'id'   => $prefix . 'memfb3',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'fourth member FB link',
-                'desc' => 'Insert member FB link...',
-                'id'   => $prefix . 'memfb4',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'First member TW link',
-                'desc' => 'Insert member TW link...',
-                'id'   => $prefix . 'memtw1',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'Second member TW link',
-                'desc' => 'Insert member TW link...',
-                'id'   => $prefix . 'memtw2',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'Third member TW link',
-                'desc' => 'Insert member TW link...',
-                'id'   => $prefix . 'memtw3',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'Fourth member TW link',
-                'desc' => 'Insert member TW link...',
-                'id'   => $prefix . 'memtw4',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'First member Email',
-                'desc' => 'Insert member email...',
-                'id'   => $prefix . 'memem1',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'Second member Email',
-                'desc' => 'Insert member email...',
-                'id'   => $prefix . 'memem2',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'Third member Email',
-                'desc' => 'Insert member email...',
-                'id'   => $prefix . 'memem3',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'Fourth member Email',
-                'desc' => 'Insert member email...',
-                'id'   => $prefix . 'memem4',
-                'type'    => 'text',
-            ),
-            array(
-                'name' => 'First member Description',
-                'desc' => 'Insert member description...',
-                'id'   => $prefix . 'memdesc1',
-                'type'    => 'wysiwyg',
-            ),
-            array(
-                'name' => 'Second member Description',
-                'desc' => 'Insert member description...',
-                'id'   => $prefix . 'memdesc2',
-                'type'    => 'wysiwyg',
-            ),
-            array(
-                'name' => 'Third member Description',
-                'desc' => 'Insert member description...',
-                'id'   => $prefix . 'memdesc3',
-                'type'    => 'wysiwyg',
-            ),
-            array(
-                'name' => 'Fourth member Description',
-                'desc' => 'Insert member description...',
-                'id'   => $prefix . 'memdesc4',
-                'type'    => 'wysiwyg',
-            ),
-            array(
-                'name' => 'First member avatar',
-                'desc' => 'Insert member avatar...',
-                'id'   => $prefix . 'memava1',
-                'type'    => 'file',
-            ),
-            array(
-                'name' => 'Second member avatar',
-                'desc' => 'Insert member avatar...',
-                'id'   => $prefix . 'memava2',
-                'type'    => 'file',
-            ),
-            array(
-                'name' => 'Third member avatar',
-                'desc' => 'Insert member avatar...',
-                'id'   => $prefix . 'memava3',
-                'type'    => 'file',
-            ),
-            array(
-                'name' => 'Fourth member avatar',
-                'desc' => 'Insert member avatar...',
-                'id'   => $prefix . 'memava4',
-                'type'    => 'file',
-            ),
-        )
-    );
+//    $meta_boxes[] = array(
+//        'id'         => 'aboutslider_page_metabox',
+//        'title'      => 'About Page Options',
+//        'pages'      => array( 'page', ), // Post type
+//        'context'    => 'normal',
+//        'priority'   => 'high',
+//        'show_names' => true, // Show field names on the left
+//        'show_on'    => array( 'key' => 'page-template', 'value' => array('template-products.php'), ), // Specific post templates to display this metabox
+//        'fields' => array(
+//            array(
+//                'name' => 'First member Name',
+//                'desc' => 'Insert member name...',
+//                'id'   => $prefix . 'memname1',
+//                'type'    => 'text',
+//            ),
+//            array(
+//                'name' => 'Second member Name',
+//                'desc' => 'Insert member name...',
+//                'id'   => $prefix . 'memname2',
+//                'type'    => 'text',
+//            ),
+//            array(
+//                'name' => 'Third member Name',
+//                'desc' => 'Insert member name...',
+//                'id'   => $prefix . 'memname3',
+//                'type'    => 'text',
+//            ),
+//            array(
+//                'name' => 'Fourth member Name',
+//                'desc' => 'Insert member name...',
+//                'id'   => $prefix . 'memname4',
+//                'type'    => 'text',
+//            ),
+//            array(
+//                'name' => 'First member Prof',
+//                'desc' => 'Insert member prof...',
+//                'id'   => $prefix . 'memprof1',
+//                'type'    => 'text',
+//            ),
+//            array(
+//                'name' => 'Second member Prof',
+//                'desc' => 'Insert member prof...',
+//                'id'   => $prefix . 'memprof2',
+//                'type'    => 'text',
+//            ),
+//            array(
+//                'name' => 'Third member Prof',
+//                'desc' => 'Insert member prof...',
+//                'id'   => $prefix . 'memprof3',
+//                'type'    => 'text',
+//            ),
+//            array(
+//                'name' => 'Fourth member Prof',
+//                'desc' => 'Insert member prof...',
+//                'id'   => $prefix . 'memprof4',
+//                'type'    => 'text',
+//            ),
+//            array(
+//                'name' => 'First member FB link',
+//                'desc' => 'Insert member FB link...',
+//                'id'   => $prefix . 'memfb1',
+//                'type'    => 'text',
+//            ),
+//            array(
+//                'name' => 'Second member FB link',
+//                'desc' => 'Insert member FB link...',
+//                'id'   => $prefix . 'memfb2',
+//                'type'    => 'text',
+//            ),
+//            array(
+//                'name' => 'Third member FB link',
+//                'desc' => 'Insert member FB link...',
+//                'id'   => $prefix . 'memfb3',
+//                'type'    => 'text',
+//            ),
+//            array(
+//                'name' => 'fourth member FB link',
+//                'desc' => 'Insert member FB link...',
+//                'id'   => $prefix . 'memfb4',
+//                'type'    => 'text',
+//            ),
+//            array(
+//                'name' => 'First member TW link',
+//                'desc' => 'Insert member TW link...',
+//                'id'   => $prefix . 'memtw1',
+//                'type'    => 'text',
+//            ),
+//            array(
+//                'name' => 'Second member TW link',
+//                'desc' => 'Insert member TW link...',
+//                'id'   => $prefix . 'memtw2',
+//                'type'    => 'text',
+//            ),
+//            array(
+//                'name' => 'Third member TW link',
+//                'desc' => 'Insert member TW link...',
+//                'id'   => $prefix . 'memtw3',
+//                'type'    => 'text',
+//            ),
+//            array(
+//                'name' => 'Fourth member TW link',
+//                'desc' => 'Insert member TW link...',
+//                'id'   => $prefix . 'memtw4',
+//                'type'    => 'text',
+//            ),
+//            array(
+//                'name' => 'First member Email',
+//                'desc' => 'Insert member email...',
+//                'id'   => $prefix . 'memem1',
+//                'type'    => 'text',
+//            ),
+//            array(
+//                'name' => 'Second member Email',
+//                'desc' => 'Insert member email...',
+//                'id'   => $prefix . 'memem2',
+//                'type'    => 'text',
+//            ),
+//            array(
+//                'name' => 'Third member Email',
+//                'desc' => 'Insert member email...',
+//                'id'   => $prefix . 'memem3',
+//                'type'    => 'text',
+//            ),
+//            array(
+//                'name' => 'Fourth member Email',
+//                'desc' => 'Insert member email...',
+//                'id'   => $prefix . 'memem4',
+//                'type'    => 'text',
+//            ),
+//            array(
+//                'name' => 'First member Description',
+//                'desc' => 'Insert member description...',
+//                'id'   => $prefix . 'memdesc1',
+//                'type'    => 'wysiwyg',
+//            ),
+//            array(
+//                'name' => 'Second member Description',
+//                'desc' => 'Insert member description...',
+//                'id'   => $prefix . 'memdesc2',
+//                'type'    => 'wysiwyg',
+//            ),
+//            array(
+//                'name' => 'Third member Description',
+//                'desc' => 'Insert member description...',
+//                'id'   => $prefix . 'memdesc3',
+//                'type'    => 'wysiwyg',
+//            ),
+//            array(
+//                'name' => 'Fourth member Description',
+//                'desc' => 'Insert member description...',
+//                'id'   => $prefix . 'memdesc4',
+//                'type'    => 'wysiwyg',
+//            ),
+//            array(
+//                'name' => 'First member avatar',
+//                'desc' => 'Insert member avatar...',
+//                'id'   => $prefix . 'memava1',
+//                'type'    => 'file',
+//            ),
+//            array(
+//                'name' => 'Second member avatar',
+//                'desc' => 'Insert member avatar...',
+//                'id'   => $prefix . 'memava2',
+//                'type'    => 'file',
+//            ),
+//            array(
+//                'name' => 'Third member avatar',
+//                'desc' => 'Insert member avatar...',
+//                'id'   => $prefix . 'memava3',
+//                'type'    => 'file',
+//            ),
+//            array(
+//                'name' => 'Fourth member avatar',
+//                'desc' => 'Insert member avatar...',
+//                'id'   => $prefix . 'memava4',
+//                'type'    => 'file',
+//            ),
+//        )
+//    );
 
 	return $meta_boxes;
 }
