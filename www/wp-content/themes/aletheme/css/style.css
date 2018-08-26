@@ -5650,6 +5650,33 @@ h2+.gallery, h2+.items-list, h2+.well-with-btn, h3+.gallery, h3+.items-list, h3+
     padding: 0 15px;
     margin-bottom: 30px;
 }
+
+/**
+ * custom <ul>
+ */
+.container ul {
+    list-style-type: square;
+}
+
+
+header ul,
+footer .container ul,
+.slicknav_menu ul,
+.order-block ul,
+.container ul.product-gallery,
+.container ul.flexbox,
+.container ul.nav-justified,
+.container ul.slider-footer-ul,
+.container ul#menu-uslugi,
+.container ul#topMenu,
+.container ul.slicknav_nav,
+.container ul.slider-footer-ul,
+.container ul.sub-menu
+.container ul#menu-glavnoe
+{
+    list-style: none!important;
+}
+
 @media screen and (min-width: 992px){
     .with-sidebar .items-view-grid .item:nth-child(6n+1) {
         clear: both;
@@ -5696,4 +5723,3 @@ h2+.gallery, h2+.items-list, h2+.well-with-btn, h3+.gallery, h3+.items-list, h3+
 }
 .price-container{display:block!important}a.datlink.readmore{display:none!important{
 }
-</div>
