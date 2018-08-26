@@ -35,8 +35,9 @@ define('DB_HOST', 'db');
 define('DB_CHARSET', 'utf8mb4');
 
 /** Схема сопоставления. Не меняйте, если не уверены. */
-define('DB_COLLATE', '');
+define('DB_COLLATE', '');;
 
+define( 'FS_METHOD', 'direct' );
 /**#@+
  * Уникальные ключи и соли для аутентификации.
  *
@@ -76,7 +77,7 @@ $table_prefix  = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', true);
+define('WP_DEBUG', false);
 
 /* Это всё, дальше не редактируем. Успехов! */
 
