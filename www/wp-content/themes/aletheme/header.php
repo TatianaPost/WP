@@ -78,6 +78,7 @@
                     'menu_id' => 'menu-uslugi',
                     'container' => 'nav',
                     'container_class' => 'slider-footer',
+                    'depth' => 3,
                     'walker' => '',
                 ]);
             }?>

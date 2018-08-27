@@ -2767,7 +2767,7 @@ main.shadow>.container {
 }
 
 .slider-footer>.slider-footer-ul>li>ul>li {
-    border-bottom: 1px solid #ededed
+    border-bottom: 1px solid #ededed;
 }
 
 .slider-footer>.slider-footer-ul>li>ul>li a:hover {
@@ -2792,6 +2792,10 @@ main.shadow>.container {
     padding-bottom: 10px
 }
 
+.slider-footer>.slider-footer-ul>li>.sub-menu>li>a>.menu-image-title{
+    padding: 0 3px;
+}
+
 @media (min-width:768px) {
     .slider-footer>.slider-footer-ul>li:hover .title,
     .slider-footer>.slider-footer-ul>li:hover>a>.menu-image-title {
@@ -2799,7 +2803,9 @@ main.shadow>.container {
         border-color: #fd9500
     }
     .slider-footer>.slider-footer-ul>li:hover .title:after,
-    .slider-footer>.slider-footer-ul>li:hover>a>.menu-image-title:after {
+    .slider-footer>.slider-footer-ul>li:hover>a>.menu-image-title:after,
+    .slider-footer>.slider-footer-ul>li>.sub-menu>li.menu-item-has-children:hover>a>.menu-image-title:after
+    {
         content: '\f107';
         font-family: FontAwesome;
         font-size: 14px;
@@ -2810,6 +2816,11 @@ main.shadow>.container {
         width: 100%;
         height: 15px;
         text-align: center
+    }
+    .slider-footer>.slider-footer-ul>li>.sub-menu>li.menu-item-has-children:hover>a>.menu-image-title:after
+    {
+        bottom: -2px;
+        transform: rotate(-90deg);
     }
     .slider-footer>.slider-footer-ul>li:hover ul {
         display: block
@@ -3047,7 +3058,7 @@ h2 {
     font-size: 13px;
     font-family: Roboto;
     letter-spacing: .05em;
-    height: 272px
+    /*height: 272px;*/
 }
 
 .advant-icon {
@@ -4054,7 +4065,14 @@ footer .btn-order:after {
         width: 138px
     }
     .slider-footer .slider-footer-ul .sub-menu li .sub-menu {
-        display: none
+        display: none;
+        background-color: #f5f5f5;
+        position: absolute;
+        left: 100%;
+        top: -1px;
+    }
+    .slider-footer .slider-footer-ul .sub-menu li:hover .sub-menu {
+        display: block;
     }
     .slider-footer .slider-footer-ul li ul {
         position: absolute;
@@ -4143,6 +4161,9 @@ footer .btn-order:after {
     }
     .slider-footer .slider-footer-ul li ul li {
         max-width: 100%
+    }
+    .heading h2{
+        margin-top: 10px!important;
     }
 }
 
@@ -4457,6 +4478,15 @@ footer .btn-order:after {
     .slicknav_nav a:hover {
         color: #fd9500;
         background: transparent
+    }
+    .heading h2{
+        margin-top: 10px!important;
+    }
+    .container p{
+        margin-left: 10px;
+    }
+    .product-gallery{
+        margin: 0;
     }
 }
 
@@ -5204,11 +5234,13 @@ footer.shadow .container{
 /* Сертификаты */
 .review-block > a {
     display: inline-block;
+    width: 134px;
     vertical-align: top;
-    margin: 10px 12px 10px 0;
+    margin: 10px 10px 10px 0;
     border: 4px #5f656e solid;
     -webkit-border-radius: 5px;
     border-radius: 5px;
+    box-sizing: content-box;
 }
 
 /* Цены */
@@ -5285,7 +5317,7 @@ footer.shadow .container{
     line-height: 1.1;
     color: inherit;
     text-align: center;
-    cursor: pointer;
+    cursor: default;
 }
 .price section {
     border-left: rgb(239, 235, 228) 7px solid;
@@ -5352,6 +5384,9 @@ footer.shadow .container{
     font-size: 15px;
     font-weight: 400;
     font-family: Roboto;
+    word-break: break-word;
+    word-wrap: break-word;
+    white-space: normal;
 }
 .price table a.formopen:hover {
     color: #333;
@@ -5677,6 +5712,17 @@ footer .container ul,
     list-style: none!important;
 }
 
+.wpcf7-captchar{
+    width: 100%;
+    box-sizing: border-box;
+    height: 38px;
+    border: 1px solid #d9dadb;
+    border-radius: 4px;
+    box-shadow: none;
+    text-shadow: none;
+    outline: none;
+}
+
 @media screen and (min-width: 992px){
     .with-sidebar .items-view-grid .item:nth-child(6n+1) {
         clear: both;
@@ -5721,4 +5767,10 @@ footer .container ul,
         clear: both;
     }
 }
-.price-container{display:block!important}a.datlink.readmore{display:none!important}
+@media (max-width:400px) {
+    .review__modal{
+        width: 100%;
+    }
+}
+.price-container{display:block!important}
+a.datlink.readmore{display:none!important}

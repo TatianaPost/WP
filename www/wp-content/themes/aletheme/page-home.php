@@ -69,6 +69,7 @@ get_header();?>
             <?php endwhile;  endif;  ?>
         </div>
     </div>
+    <div class="clearfix" style="clear: both"></div>
 </section>
 <!-- /advantages -->
 

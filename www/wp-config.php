@@ -26,7 +26,7 @@ define('DB_NAME', 'myDb');
 define('DB_USER', 'root');
 
 /** Пароль к базе данных MySQL */
-define('DB_PASSWORD', 'test');
+define('DB_PASSWORD', 'root');
 
 /** Имя сервера MySQL */
 define('DB_HOST', 'db');
@@ -35,7 +35,7 @@ define('DB_HOST', 'db');
 define('DB_CHARSET', 'utf8mb4');
 
 /** Схема сопоставления. Не меняйте, если не уверены. */
-define('DB_COLLATE', '');;
+define('DB_COLLATE', '');
 
 define( 'FS_METHOD', 'direct' );
 /**#@+
