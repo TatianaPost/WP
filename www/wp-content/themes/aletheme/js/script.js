@@ -126,6 +126,7 @@ jQuery(document).ready(function($) {
 
 
   $("<div class='arrow-mobMenu'></div>").insertAfter( '#menu-uslugi>.menu-item-has-children>a' );
+  jQuery("<div class='arrow-mobMenu'></div>").insertAfter( '#menu-uslugi>.menu-item-has-children>.sub-menu>.menu-item-has-children>a' );
 
   $('.arrow-mobMenu').on('click', function(e) {
     $(this).toggleClass('active');
