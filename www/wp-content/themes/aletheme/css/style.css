@@ -5734,6 +5734,12 @@ footer .container ul,
     outline: none;
 }
 
+.table-responsive{
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
+
 @media screen and (min-width: 992px){
     .with-sidebar .items-view-grid .item:nth-child(6n+1) {
         clear: both;
