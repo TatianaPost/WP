@@ -5727,6 +5727,7 @@ footer .container ul,
     width: 100%;
     box-sizing: border-box;
     height: 38px;
+    padding-left: 10px;
     border: 1px solid #d9dadb;
     border-radius: 4px;
     box-shadow: none;
