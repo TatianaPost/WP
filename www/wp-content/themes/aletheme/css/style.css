@@ -5782,6 +5782,25 @@ footer .container ul,
     .review__modal{
         width: 100%;
     }
+
+    .price table > tbody > tr > td, .price table > tbody > tr > th, .price table > tfoot > tr > td, .price table > tfoot > tr > th, .price table > thead > tr > td, .price table > thead > tr > th
+    {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .price a.datlink-hide.readmore{
+        padding: 3px;
+        box-sizing: content-box;
+    }
+
+    .price table td:first-child{
+        padding: 8px 3px 8px 3px;
+    }
+    .price table a.formopen{
+        min-width: 85px;
+        padding: 3px;
+        font-size: 14px;
+    }
 }
 .price-container{display:block!important}
 a.datlink.readmore{display:none!important}
