@@ -2788,14 +2788,8 @@ main.shadow>.container {
     color: #303030;
     line-height: 1.4;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px
+    padding: 10px 3px;
 }
-
-.slider-footer>.slider-footer-ul>li>.sub-menu>li>a>.menu-image-title{
-    padding: 0 3px;
-}
-
 
 @media (min-width:768px) {
     .slider-footer>.slider-footer-ul>li:hover .title,
@@ -2805,7 +2799,7 @@ main.shadow>.container {
     }
     .slider-footer>.slider-footer-ul>li:hover .title:after,
     .slider-footer>.slider-footer-ul>li:hover>a>.menu-image-title:after,
-    .slider-footer>.slider-footer-ul>li>.sub-menu>li.menu-item-has-children:hover>a>.menu-image-title:after
+    .slider-footer>.slider-footer-ul>li>.sub-menu>li.menu-item-has-children:hover>a:after
     {
         content: '\f107';
         font-family: FontAwesome;
@@ -2818,7 +2812,7 @@ main.shadow>.container {
         height: 15px;
         text-align: center
     }
-    .slider-footer>.slider-footer-ul>li>.sub-menu>li.menu-item-has-children:hover>a>.menu-image-title:after
+    .slider-footer>.slider-footer-ul>li>.sub-menu>li.menu-item-has-children:hover>a:after
     {
         bottom: -2px;
         transform: rotate(-90deg);

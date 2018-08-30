@@ -338,7 +338,15 @@ class Menu_Image_Plugin {
 				$item_args = array( $image, $title, $none );
 				break;
 		}
-		$title = vsprintf( '%s<span class="menu-image-title">%s</span>%s', $item_args );
+
+
+		if (in_array($position, ['after'])){
+            $title = vsprintf( '%s%s%s', $item_args );
+
+        }else{
+            $title = vsprintf( '%s<span class="menu-image-title">%s</span>%s', $item_args );
+        }
+
 
 		return $title;
 	}
