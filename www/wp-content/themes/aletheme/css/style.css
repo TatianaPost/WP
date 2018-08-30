@@ -5701,7 +5701,12 @@ h2+.gallery, h2+.items-list, h2+.well-with-btn, h3+.gallery, h3+.items-list, h3+
  * custom <ul>
  */
 .container ul {
+    padding-left: 25px;
     list-style-type: square;
+}
+
+.container ul li{
+    font-family: "Roboto";
 }
 
 
@@ -5717,10 +5722,28 @@ footer .container ul,
 .container ul#topMenu,
 .container ul.slicknav_nav,
 .container ul.slider-footer-ul,
-.container ul.sub-menu
+.container ul.sub-menu,
 .container ul#menu-glavnoe
 {
+    padding-left: 0px;
     list-style: none!important;
+}
+header ul li,
+footer .container ul li,
+.slicknav_menu ul li,
+.order-block ul li,
+.container ul.product-gallery li,
+.container ul.flexbox li,
+.container ul.nav-justified li,
+.container ul.slider-footer-ul li,
+.container ul#menu-uslugi li,
+.container ul#topMenu li,
+.container ul.slicknav_nav li,
+.container ul.slider-footer-ul li,
+.container ul.sub-menu li,
+.container ul#menu-glavnoe li
+{
+    font-family: "RobotoCondensed";
 }
 
 .wpcf7-captchar{
