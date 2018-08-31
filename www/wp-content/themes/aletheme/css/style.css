@@ -5408,6 +5408,7 @@ footer.shadow .container{
     display: block;
     margin-top: -9px;
     margin-bottom: -9px;
+    padding: 0 8px;
 }
 .shares .share {
     display: block;
@@ -5485,6 +5486,26 @@ footer.shadow .container{
     line-height: 0;
     position: relative;
     vertical-align: baseline;
+}
+
+@media all and (max-width: 700px) {
+    .shares .share .image {
+        display: none;
+    }
+
+    .shares .share .information .hide-wrapper,
+    .shares .share .information .description,
+    .shares .share .wrapper,
+    .shares .share .information .caption {
+        height: auto;
+    }
+
+    .shares .share .information {
+        margin-left: 0px;
+        padding-left: 25px;
+        padding-bottom: 15px;
+        overflow: hidden;
+    }
 }
 
 /* Отзывы  */
