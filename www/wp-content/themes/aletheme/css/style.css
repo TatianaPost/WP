@@ -2832,7 +2832,7 @@ ul>li,
     line-height: 1.571;
     position: relative;
     letter-spacing: .01em
-}
+}.container ul
 
 .title,
 .slider-footer>ul>li>a>.menu-image-title,
@@ -5716,7 +5716,7 @@ h2+.gallery, h2+.items-list, h2+.well-with-btn, h3+.gallery, h3+.items-list, h3+
  * custom <ul>
  */
 .container ul {
-    padding-left: 25px;
+    padding-left: 35px;
     list-style-type: square;
 }
 
