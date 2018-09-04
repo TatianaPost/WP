@@ -2863,7 +2863,7 @@ h1 {
 h1:after {
     content: '';
     position: absolute;
-    bottom: -19px;
+    bottom: -10px;
     left: 50%;
     background: #fd9500;
     width: 45px;
